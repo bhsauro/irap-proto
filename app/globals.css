@@ -2,4 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+header {
+  width: 300px;
+  margin: auto; 
+}
 
+.formContainer {
+  width: 300px;
+  margin: auto; 
+}
