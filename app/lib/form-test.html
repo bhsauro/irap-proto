@@ -1,0 +1,935 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+
+    <title>Screening Form</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <!-- THIS SCRIPT NEEDS TO BE LOADED FIRST BEFORE wforms.js -->
+    <script type="text/javascript" data-for="FA__DOMContentLoadedEventDispatch" src="https://refugeerights.tfaforms.net/js/FA__DOMContentLoadedEventDispatcher.js" defer></script>
+            <script type="text/javascript">
+        document.addEventListener("FA__DOMContentLoaded", function(){
+            const FORM_TIME_START = Math.floor((new Date).getTime()/1000);
+            let formElement = document.getElementById("tfa_0");
+            if (null === formElement) {
+                formElement = document.getElementById("0");
+            }
+            let appendJsTimerElement = function(){
+                let formTimeDiff = Math.floor((new Date).getTime()/1000) - FORM_TIME_START;
+                let cumulatedTimeElement = document.getElementById("tfa_dbCumulatedTime");
+                if (null !== cumulatedTimeElement) {
+                    let cumulatedTime = parseInt(cumulatedTimeElement.value);
+                    if (null !== cumulatedTime && cumulatedTime > 0) {
+                        formTimeDiff += cumulatedTime;
+                    }
+                }
+                let jsTimeInput = document.createElement("input");
+                jsTimeInput.setAttribute("type", "hidden");
+                jsTimeInput.setAttribute("value", formTimeDiff.toString());
+                jsTimeInput.setAttribute("name", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("id", "tfa_dbElapsedJsTime");
+                jsTimeInput.setAttribute("autocomplete", "off");
+                if (null !== formElement) {
+                    formElement.appendChild(jsTimeInput);
+                }
+            };
+            if (null !== formElement) {
+                if(formElement.addEventListener){
+                    formElement.addEventListener('submit', appendJsTimerElement, false);
+                } else if(formElement.attachEvent){
+                    formElement.attachEvent('onsubmit', appendJsTimerElement);
+                }
+            }
+        });
+    </script>
+
+    <link href="https://refugeerights.tfaforms.net/dist/form-builder/5.0.0/wforms-layout.css?v=1709701554" rel="stylesheet" type="text/css" />
+
+    <link href="https://refugeerights.tfaforms.net/uploads/themes/theme-27.css" rel="stylesheet" type="text/css" />
+    <link href="https://refugeerights.tfaforms.net/dist/form-builder/5.0.0/wforms-jsonly.css?v=1709701554" rel="alternate stylesheet" title="This stylesheet activated by javascript" type="text/css" />
+    <script type="text/javascript" src="https://refugeerights.tfaforms.net/wForms/3.11/js/wforms.js?v=1709701554"></script>
+    <script type="text/javascript">
+        wFORMS.behaviors.prefill.skip = false;
+    </script>
+        <script type="text/javascript" src="https://refugeerights.tfaforms.net/wForms/3.11/js/localization-en_US.js?v=1709701554"></script>
+
+            
+    
+    </head>
+<body class="default wFormWebPage" >
+
+
+    <div id="tfaContent">
+        <div class="wFormContainer" >
+    <div class="wFormHeader"></div>
+    <style type="text/css">
+                #tfa_1056,
+                *[id^="tfa_1056["] {
+                    width: 401px !important;
+                }
+                #tfa_1056-D,
+                *[id^="tfa_1056["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_1057,
+                *[id^="tfa_1057["] {
+                    width: 401px !important;
+                }
+                #tfa_1057-D,
+                *[id^="tfa_1057["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_1576,
+                *[id^="tfa_1576["] {
+                    width: 400px !important;
+                }
+                #tfa_1576-D,
+                *[id^="tfa_1576["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_1580,
+                *[id^="tfa_1580["] {
+                    width: 400px !important;
+                }
+                #tfa_1580-D,
+                *[id^="tfa_1580["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_1618,
+                *[id^="tfa_1618["] {
+                    width: 401px !important;
+                }
+                #tfa_1618-D,
+                *[id^="tfa_1618["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_3061,
+                *[id^="tfa_3061["] {
+                    width: 401px !important;
+                }
+                #tfa_3061-D,
+                *[id^="tfa_3061["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_2974,
+                *[id^="tfa_2974["] {
+                    width: 109px !important;
+                }
+                #tfa_2974-D,
+                *[id^="tfa_2974["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_2976,
+                *[id^="tfa_2976["] {
+                    width: 109px !important;
+                }
+                #tfa_2976-D,
+                *[id^="tfa_2976["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_2978,
+                *[id^="tfa_2978["] {
+                    width: 109px !important;
+                }
+                #tfa_2978-D,
+                *[id^="tfa_2978["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_2980,
+                *[id^="tfa_2980["] {
+                    width: 109px !important;
+                }
+                #tfa_2980-D,
+                *[id^="tfa_2980["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_2982,
+                *[id^="tfa_2982["] {
+                    width: 109px !important;
+                }
+                #tfa_2982-D,
+                *[id^="tfa_2982["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_2984,
+                *[id^="tfa_2984["] {
+                    width: 109px !important;
+                }
+                #tfa_2984-D,
+                *[id^="tfa_2984["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            
+                #tfa_3070,
+                *[id^="tfa_3070["] {
+                    width: 109px !important;
+                }
+                #tfa_3070-D,
+                *[id^="tfa_3070["][class~="field-container-D"] {
+                    width: auto !important;
+                }
+            </style><div class=""><div class="wForm" id="8-WRPR" data-language="en_US" dir="ltr">
+<div class="codesection" id="code-8"></div>
+<h3 class="wFormTitle" data-testid="form-title" id="8-T">Screening Form</h3>
+<form method="post" action="https://refugeerights.tfaforms.net/api_v2/workflow/processor" class="hintsBelow labelsAbove" id="8" role="form">
+<div class="wfPage" id="wfPgIndex-1"><div class="section pageSection" id="tfa_1"><div class="htmlSection" id="tfa_3"><div class="htmlContent" id="tfa_3-HTML"><span id="docs-internal-guid-b288c459-7fff-a49c-ce74-3f10e537496e"><p style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(52, 35, 86); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Hello,</span></p><p style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr"><span style="font-size: 14.4px;">&nbsp;</span></p><p style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(52, 35, 86); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">The International Refugee Assistance Project (IRAP) uses this form to receive referrals from partner organizations with clients who might benefit from our legal services. This survey is designed to collect structured information on your clients so we can efficiently determine whether we can offer assistance. Please take your time to fill it out as completely as possible. It should take you about 10-20 minutes depending on the client. You can save the form and come back to it if you need extra time to find an answer to a question.</span></p><p style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr">&nbsp;</p><p style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(52, 35, 86); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">IRAP provides free legal help to refugees and displaced people and is not part of any government, IOM, or UNHCR. We help prepare refugee and visa applications. We cannot grant refugee status or visas or speed up cases. We cannot provide financial help, find or pay for housing, or find jobs.</span></p><p style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr">&nbsp;<span style="font-size: 14.4px;">&nbsp;</span></p><p style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(52, 35, 86); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">All of IRAP's services are free. At no point will we request money from you or the individual(s) you are referring. If someone says they are from IRAP and are requesting money from you or your client, please report this issue to us here.</span></p><p style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(52, 35, 86); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;"><br></span></p><p style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(52, 35, 86); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">For more information about IRAP's services, please refer to our website: iraplegalinfo.org.&nbsp;</span></p><p style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr">&nbsp;</p><p style="line-height: 1.2; margin-top: 0pt; margin-bottom: 0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Thank you!</span></p></span></div></div></div></div>
+<div class="wfPage" id="wfPgIndex-2"><div class="section pageSection" id="tfa_1053">
+<fieldset id="tfa_2206" class="section">
+<div class="htmlSection" id="tfa_1055"><div class="htmlContent" id="tfa_1055-HTML"><span style="font-size: 14.4px; white-space: pre-wrap;">We will first begin with a few short questions to see if we might be able to help you at this time. Please fill out the questions to the best of your ability.&nbsp;&nbsp;</span></div></div>
+<div class="oneField field-container-D    " id="tfa_1056-D">
+<label id="tfa_1056-L" class="label preField " for="tfa_1056"><span id="docs-internal-guid-e45a32bc-7fff-fc77-f128-7f9cf579493e"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Where are you located?</span><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(69, 129, 142); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">&nbsp;</span></p></span></label><br><div class="inputWrapper"><select id="tfa_1056" name="tfa_1056" title="Where are you located? " class=""><option value="">Please select...</option>
+<option value="tfa_1061" id="tfa_1061" data-conditionals="#tfa_3058" class="">Afghanistan</option>
+<option value="tfa_1062" id="tfa_1062" class="">Åland Islands</option>
+<option value="tfa_1063" id="tfa_1063" class="">Albania</option>
+<option value="tfa_1064" id="tfa_1064" class="">Algeria</option>
+<option value="tfa_1065" id="tfa_1065" class="">American Samoa</option>
+<option value="tfa_1066" id="tfa_1066" class="">Andorra</option>
+<option value="tfa_1067" id="tfa_1067" class="">Angola</option>
+<option value="tfa_1068" id="tfa_1068" class="">Anguilla</option>
+<option value="tfa_1069" id="tfa_1069" class="">Antigua and Barbuda</option>
+<option value="tfa_1070" id="tfa_1070" class="">Argentina</option>
+<option value="tfa_1071" id="tfa_1071" class="">Armenia</option>
+<option value="tfa_1072" id="tfa_1072" class="">Aruba</option>
+<option value="tfa_1073" id="tfa_1073" class="">Australia</option>
+<option value="tfa_1074" id="tfa_1074" class="">Austria</option>
+<option value="tfa_1075" id="tfa_1075" class="">Azerbaijan</option>
+<option value="tfa_1076" id="tfa_1076" class="">Bahamas</option>
+<option value="tfa_1077" id="tfa_1077" class="">Bahrain</option>
+<option value="tfa_1078" id="tfa_1078" class="">Bangladesh</option>
+<option value="tfa_1079" id="tfa_1079" class="">Barbados</option>
+<option value="tfa_1080" id="tfa_1080" class="">Belarus</option>
+<option value="tfa_1081" id="tfa_1081" class="">Belgium</option>
+<option value="tfa_1082" id="tfa_1082" class="">Belize</option>
+<option value="tfa_1083" id="tfa_1083" class="">Benin</option>
+<option value="tfa_1084" id="tfa_1084" class="">Bermuda</option>
+<option value="tfa_1085" id="tfa_1085" class="">Bhutan</option>
+<option value="tfa_1086" id="tfa_1086" class="">Bolivia</option>
+<option value="tfa_1087" id="tfa_1087" class="">Bonaire</option>
+<option value="tfa_1088" id="tfa_1088" class="">Bosnia and Herzegovina</option>
+<option value="tfa_1089" id="tfa_1089" class="">Botswana</option>
+<option value="tfa_1090" id="tfa_1090" class="">Bouvet Island</option>
+<option value="tfa_1091" id="tfa_1091" class="">Brazil</option>
+<option value="tfa_1092" id="tfa_1092" class="">British Indian Ocean Territory</option>
+<option value="tfa_1093" id="tfa_1093" class="">British Virgin Islands</option>
+<option value="tfa_1094" id="tfa_1094" class="">Brunei</option>
+<option value="tfa_1095" id="tfa_1095" class="">Bulgaria</option>
+<option value="tfa_1096" id="tfa_1096" class="">Burkina Faso</option>
+<option value="tfa_1097" id="tfa_1097" class="">Burundi</option>
+<option value="tfa_1098" id="tfa_1098" class="">Cambodia</option>
+<option value="tfa_1099" id="tfa_1099" class="">Cameroon</option>
+<option value="tfa_1100" id="tfa_1100" class="">Canada</option>
+<option value="tfa_1101" id="tfa_1101" class="">Cape Verde</option>
+<option value="tfa_1102" id="tfa_1102" class="">Cayman Islands</option>
+<option value="tfa_1103" id="tfa_1103" class="">Central African Republic</option>
+<option value="tfa_1104" id="tfa_1104" class="">Chad</option>
+<option value="tfa_1105" id="tfa_1105" class="">Chile</option>
+<option value="tfa_1106" id="tfa_1106" class="">China</option>
+<option value="tfa_1107" id="tfa_1107" class="">Christmas Island</option>
+<option value="tfa_1108" id="tfa_1108" class="">Cocos (Keeling) Islands</option>
+<option value="tfa_1109" id="tfa_1109" class="">Colombia</option>
+<option value="tfa_1110" id="tfa_1110" class="">Comoros</option>
+<option value="tfa_1111" id="tfa_1111" class="">Cook Islands</option>
+<option value="tfa_1112" id="tfa_1112" class="">Costa Rica</option>
+<option value="tfa_1113" id="tfa_1113" class="">Côte d'Ivoire</option>
+<option value="tfa_1114" id="tfa_1114" class="">Croatia</option>
+<option value="tfa_1115" id="tfa_1115" class="">Cuba</option>
+<option value="tfa_1116" id="tfa_1116" class="">Curaçao</option>
+<option value="tfa_1117" id="tfa_1117" class="">Cyprus</option>
+<option value="tfa_1118" id="tfa_1118" class="">Czech Republic</option>
+<option value="tfa_1119" id="tfa_1119" class="">Democratic Republic of the Congo (DRC)</option>
+<option value="tfa_1120" id="tfa_1120" class="">Denmark</option>
+<option value="tfa_1121" id="tfa_1121" class="">Djibouti</option>
+<option value="tfa_1122" id="tfa_1122" class="">Dominica</option>
+<option value="tfa_1123" id="tfa_1123" class="">Dominican Republic</option>
+<option value="tfa_1124" id="tfa_1124" class="">Ecuador</option>
+<option value="tfa_1125" id="tfa_1125" class="">Egypt</option>
+<option value="tfa_1126" id="tfa_1126" class="">El Salvador</option>
+<option value="tfa_1127" id="tfa_1127" class="">Equatorial Guinea</option>
+<option value="tfa_1128" id="tfa_1128" class="">Eritrea</option>
+<option value="tfa_1129" id="tfa_1129" class="">Estonia</option>
+<option value="tfa_1130" id="tfa_1130" class="">Ethiopia</option>
+<option value="tfa_1131" id="tfa_1131" class="">Falkland Islands (Malvinas)</option>
+<option value="tfa_1132" id="tfa_1132" class="">Faroe Islands</option>
+<option value="tfa_1133" id="tfa_1133" class="">Fiji</option>
+<option value="tfa_1134" id="tfa_1134" class="">Finland</option>
+<option value="tfa_1135" id="tfa_1135" class="">France</option>
+<option value="tfa_1136" id="tfa_1136" class="">French Guiana</option>
+<option value="tfa_1137" id="tfa_1137" class="">French Polynesia</option>
+<option value="tfa_1138" id="tfa_1138" class="">French Southern Territories</option>
+<option value="tfa_1139" id="tfa_1139" class="">Gabon</option>
+<option value="tfa_1140" id="tfa_1140" class="">Gambia</option>
+<option value="tfa_1141" id="tfa_1141" class="">Georgia</option>
+<option value="tfa_1142" id="tfa_1142" class="">Germany</option>
+<option value="tfa_1143" id="tfa_1143" class="">Ghana</option>
+<option value="tfa_1144" id="tfa_1144" class="">Gibraltar</option>
+<option value="tfa_1145" id="tfa_1145" class="">Greece</option>
+<option value="tfa_1146" id="tfa_1146" class="">Greenland</option>
+<option value="tfa_1147" id="tfa_1147" class="">Grenada</option>
+<option value="tfa_1148" id="tfa_1148" class="">Guadeloupe</option>
+<option value="tfa_1149" id="tfa_1149" class="">Guam</option>
+<option value="tfa_1150" id="tfa_1150" class="">Guatemala</option>
+<option value="tfa_1151" id="tfa_1151" class="">Guernsey</option>
+<option value="tfa_1152" id="tfa_1152" class="">Guinea</option>
+<option value="tfa_1153" id="tfa_1153" class="">Guinea-Bissau</option>
+<option value="tfa_1154" id="tfa_1154" class="">Guyana</option>
+<option value="tfa_1155" id="tfa_1155" class="">Haiti</option>
+<option value="tfa_1156" id="tfa_1156" class="">Heard Island and McDonald Islands</option>
+<option value="tfa_1157" id="tfa_1157" class="">Holy See (Vatican City State)</option>
+<option value="tfa_1158" id="tfa_1158" class="">Honduras</option>
+<option value="tfa_1159" id="tfa_1159" class="">Hong Kong</option>
+<option value="tfa_1160" id="tfa_1160" class="">Hungary</option>
+<option value="tfa_1161" id="tfa_1161" class="">Iceland</option>
+<option value="tfa_1162" id="tfa_1162" class="">India</option>
+<option value="tfa_1163" id="tfa_1163" class="">Indonesia</option>
+<option value="tfa_1164" id="tfa_1164" class="">Iran</option>
+<option value="tfa_1165" id="tfa_1165" data-conditionals="#tfa_3058" class="">Iraq</option>
+<option value="tfa_1166" id="tfa_1166" class="">Ireland</option>
+<option value="tfa_1167" id="tfa_1167" class="">Isle of Man</option>
+<option value="tfa_1168" id="tfa_1168" class="">Israel</option>
+<option value="tfa_1169" id="tfa_1169" class="">Italy</option>
+<option value="tfa_1170" id="tfa_1170" class="">Jamaica</option>
+<option value="tfa_1171" id="tfa_1171" class="">Japan</option>
+<option value="tfa_1172" id="tfa_1172" class="">Jersey</option>
+<option value="tfa_1173" id="tfa_1173" data-conditionals="#tfa_1566,#tfa_2989,#tfa_3048" class="">Jordan</option>
+<option value="tfa_1174" id="tfa_1174" class="">Kazakhstan</option>
+<option value="tfa_1175" id="tfa_1175" class="">Kenya</option>
+<option value="tfa_1176" id="tfa_1176" class="">Kiribati</option>
+<option value="tfa_1177" id="tfa_1177" class="">Kosovo</option>
+<option value="tfa_1178" id="tfa_1178" class="">Kuwait</option>
+<option value="tfa_1179" id="tfa_1179" class="">Kyrgyzstan</option>
+<option value="tfa_1180" id="tfa_1180" class="">Laos</option>
+<option value="tfa_1181" id="tfa_1181" class="">Latvia</option>
+<option value="tfa_1182" id="tfa_1182" data-conditionals="#tfa_1566" class="">Lebanon</option>
+<option value="tfa_1183" id="tfa_1183" class="">Lesotho</option>
+<option value="tfa_1184" id="tfa_1184" class="">Liberia</option>
+<option value="tfa_1185" id="tfa_1185" class="">Libya</option>
+<option value="tfa_1186" id="tfa_1186" class="">Liechtenstein</option>
+<option value="tfa_1187" id="tfa_1187" class="">Lithuania</option>
+<option value="tfa_1188" id="tfa_1188" class="">Luxembourg</option>
+<option value="tfa_1189" id="tfa_1189" class="">Macao</option>
+<option value="tfa_1190" id="tfa_1190" class="">Madagascar</option>
+<option value="tfa_1191" id="tfa_1191" class="">Malawi</option>
+<option value="tfa_1192" id="tfa_1192" class="">Malaysia</option>
+<option value="tfa_1193" id="tfa_1193" class="">Maldives</option>
+<option value="tfa_1194" id="tfa_1194" class="">Mali</option>
+<option value="tfa_1195" id="tfa_1195" class="">Malta</option>
+<option value="tfa_1196" id="tfa_1196" class="">Marshall Islands</option>
+<option value="tfa_1197" id="tfa_1197" class="">Martinique</option>
+<option value="tfa_1198" id="tfa_1198" class="">Mauritania</option>
+<option value="tfa_1199" id="tfa_1199" class="">Mauritius</option>
+<option value="tfa_1200" id="tfa_1200" class="">Mayotte</option>
+<option value="tfa_1201" id="tfa_1201" data-conditionals="#tfa_2985,#tfa_2988,#tfa_3048" class="">Mexico</option>
+<option value="tfa_1202" id="tfa_1202" class="">Micronesia</option>
+<option value="tfa_1203" id="tfa_1203" class="">Moldova</option>
+<option value="tfa_1204" id="tfa_1204" class="">Monaco</option>
+<option value="tfa_1205" id="tfa_1205" class="">Mongolia</option>
+<option value="tfa_1206" id="tfa_1206" class="">Montenegro</option>
+<option value="tfa_1207" id="tfa_1207" class="">Montserrat</option>
+<option value="tfa_1208" id="tfa_1208" class="">Morocco</option>
+<option value="tfa_1209" id="tfa_1209" class="">Mozambique</option>
+<option value="tfa_1210" id="tfa_1210" class="">Myanmar (Burma)</option>
+<option value="tfa_1211" id="tfa_1211" class="">Namibia</option>
+<option value="tfa_1212" id="tfa_1212" class="">Nauru</option>
+<option value="tfa_1213" id="tfa_1213" class="">Nepal</option>
+<option value="tfa_1214" id="tfa_1214" class="">Netherlands</option>
+<option value="tfa_1215" id="tfa_1215" class="">New Caledonia</option>
+<option value="tfa_1216" id="tfa_1216" class="">New Zealand</option>
+<option value="tfa_1217" id="tfa_1217" class="">Nicaragua</option>
+<option value="tfa_1218" id="tfa_1218" class="">Niger</option>
+<option value="tfa_1219" id="tfa_1219" class="">Nigeria</option>
+<option value="tfa_1220" id="tfa_1220" class="">Niue</option>
+<option value="tfa_1221" id="tfa_1221" class="">Norfolk Island</option>
+<option value="tfa_1222" id="tfa_1222" class="">North Korea</option>
+<option value="tfa_1223" id="tfa_1223" class="">Northern Macedonia</option>
+<option value="tfa_1224" id="tfa_1224" class="">Northern Mariana Islands</option>
+<option value="tfa_1225" id="tfa_1225" class="">Norway</option>
+<option value="tfa_1226" id="tfa_1226" class="">Oman</option>
+<option value="tfa_1227" id="tfa_1227" class="">Pakistan</option>
+<option value="tfa_1228" id="tfa_1228" class="">Palau</option>
+<option value="tfa_1229" id="tfa_1229" class="">Palestine</option>
+<option value="tfa_1230" id="tfa_1230" class="">Panama</option>
+<option value="tfa_1231" id="tfa_1231" class="">Papua New Guinea</option>
+<option value="tfa_1232" id="tfa_1232" class="">Paraguay</option>
+<option value="tfa_1233" id="tfa_1233" class="">Peru</option>
+<option value="tfa_1234" id="tfa_1234" class="">Philippines</option>
+<option value="tfa_1235" id="tfa_1235" class="">Pitcairn</option>
+<option value="tfa_1236" id="tfa_1236" class="">Poland</option>
+<option value="tfa_1237" id="tfa_1237" class="">Portugal</option>
+<option value="tfa_1238" id="tfa_1238" class="">Puerto Rico</option>
+<option value="tfa_1239" id="tfa_1239" class="">Qatar</option>
+<option value="tfa_1240" id="tfa_1240" class="">Republic of the Congo (Congo-Brazzaville)</option>
+<option value="tfa_1241" id="tfa_1241" class="">Réunion</option>
+<option value="tfa_1242" id="tfa_1242" class="">Romania</option>
+<option value="tfa_1243" id="tfa_1243" class="">Russia</option>
+<option value="tfa_1244" id="tfa_1244" class="">Rwanda</option>
+<option value="tfa_1245" id="tfa_1245" class="">Saint Barthélemy</option>
+<option value="tfa_1246" id="tfa_1246" class="">Saint Helena</option>
+<option value="tfa_1247" id="tfa_1247" class="">Saint Kitts and Nevis</option>
+<option value="tfa_1248" id="tfa_1248" class="">Saint Lucia</option>
+<option value="tfa_1249" id="tfa_1249" class="">Saint Martin (French part)</option>
+<option value="tfa_1250" id="tfa_1250" class="">Saint Pierre and Miquelon</option>
+<option value="tfa_1251" id="tfa_1251" class="">Saint Vincent and the Grenadines</option>
+<option value="tfa_1252" id="tfa_1252" class="">Samoa</option>
+<option value="tfa_1253" id="tfa_1253" class="">San Marino</option>
+<option value="tfa_1254" id="tfa_1254" class="">Sao Tome and Principe</option>
+<option value="tfa_1255" id="tfa_1255" class="">Saudi Arabia</option>
+<option value="tfa_1256" id="tfa_1256" class="">Senegal</option>
+<option value="tfa_1257" id="tfa_1257" class="">Serbia</option>
+<option value="tfa_1258" id="tfa_1258" class="">Seychelles</option>
+<option value="tfa_1259" id="tfa_1259" class="">Sierra Leone</option>
+<option value="tfa_1260" id="tfa_1260" class="">Singapore</option>
+<option value="tfa_1261" id="tfa_1261" class="">Sint Maarten (Dutch part)</option>
+<option value="tfa_1262" id="tfa_1262" class="">Slovakia</option>
+<option value="tfa_1263" id="tfa_1263" class="">Slovenia</option>
+<option value="tfa_1264" id="tfa_1264" class="">Solomon Islands</option>
+<option value="tfa_1265" id="tfa_1265" class="">Somalia</option>
+<option value="tfa_1266" id="tfa_1266" class="">South Africa</option>
+<option value="tfa_1267" id="tfa_1267" class="">South Georgia and the South Sandwich Islands</option>
+<option value="tfa_1268" id="tfa_1268" class="">South Korea</option>
+<option value="tfa_1269" id="tfa_1269" class="">South Sudan</option>
+<option value="tfa_1270" id="tfa_1270" class="">Spain</option>
+<option value="tfa_1271" id="tfa_1271" class="">Sri Lanka</option>
+<option value="tfa_1272" id="tfa_1272" class="">Sudan</option>
+<option value="tfa_1273" id="tfa_1273" class="">Suriname</option>
+<option value="tfa_1274" id="tfa_1274" class="">Svalbard and Jan Mayen</option>
+<option value="tfa_1275" id="tfa_1275" class="">Swaziland</option>
+<option value="tfa_1276" id="tfa_1276" class="">Sweden</option>
+<option value="tfa_1277" id="tfa_1277" class="">Switzerland</option>
+<option value="tfa_1278" id="tfa_1278" class="">Syria</option>
+<option value="tfa_1279" id="tfa_1279" class="">Taiwan</option>
+<option value="tfa_1280" id="tfa_1280" class="">Tajikistan</option>
+<option value="tfa_1281" id="tfa_1281" class="">Tanzania</option>
+<option value="tfa_1282" id="tfa_1282" class="">Thailand</option>
+<option value="tfa_1283" id="tfa_1283" class="">Tibet</option>
+<option value="tfa_1284" id="tfa_1284" class="">Timor-Leste</option>
+<option value="tfa_1285" id="tfa_1285" class="">Togo</option>
+<option value="tfa_1286" id="tfa_1286" class="">Tokelau</option>
+<option value="tfa_1287" id="tfa_1287" class="">Tonga</option>
+<option value="tfa_1288" id="tfa_1288" class="">Trinidad and Tobago</option>
+<option value="tfa_1289" id="tfa_1289" class="">Tunisia</option>
+<option value="tfa_1290" id="tfa_1290" class="">Turkey</option>
+<option value="tfa_1291" id="tfa_1291" class="">Turkmenistan</option>
+<option value="tfa_1292" id="tfa_1292" class="">Turks and Caicos Islands</option>
+<option value="tfa_1293" id="tfa_1293" class="">Tuvalu</option>
+<option value="tfa_1294" id="tfa_1294" class="">U.S. Virgin Islands</option>
+<option value="tfa_1295" id="tfa_1295" class="">Uganda</option>
+<option value="tfa_1296" id="tfa_1296" class="">Ukraine</option>
+<option value="tfa_1297" id="tfa_1297" class="">United Arab Emirates</option>
+<option value="tfa_1298" id="tfa_1298" class="">United Kingdom</option>
+<option value="tfa_1299" id="tfa_1299" data-conditionals="#tfa_1603" class="">United States</option>
+<option value="tfa_1300" id="tfa_1300" class="">United States Minor Outlying Islands</option>
+<option value="tfa_1301" id="tfa_1301" class="">Uruguay</option>
+<option value="tfa_1302" id="tfa_1302" class="">Uzbekistan</option>
+<option value="tfa_1303" id="tfa_1303" class="">Vanuatu</option>
+<option value="tfa_1304" id="tfa_1304" class="">Venezuela</option>
+<option value="tfa_1305" id="tfa_1305" class="">Vietnam</option>
+<option value="tfa_1306" id="tfa_1306" class="">Wallis and Futuna</option>
+<option value="tfa_1307" id="tfa_1307" class="">Western Sahara</option>
+<option value="tfa_1308" id="tfa_1308" class="">Yemen</option>
+<option value="tfa_1309" id="tfa_1309" class="">Zambia</option>
+<option value="tfa_1310" id="tfa_1310" class="">Zimbabwe</option></select></div>
+</div>
+<div class="oneField field-container-D repeat   " id="tfa_1057-D" data-repeatlabel="Add another citizenship">
+<label id="tfa_1057-L" class="label preField " for="tfa_1057"><span id="docs-internal-guid-a24f8317-7fff-32ee-6cdc-c4845ef41ec5"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Where do you have citizenship?</span></p></span></label><br><div class="inputWrapper">
+<select id="tfa_1057" name="tfa_1057" title="Where do you have citizenship?" aria-describedby="tfa_1057-HH" class=""><option value="">Please select...</option>
+<option value="tfa_1311" id="tfa_1311" data-conditionals="#tfa_1615,#tfa_3058" class="">Afghanistan</option>
+<option value="tfa_1312" id="tfa_1312" class="">Åland Islands</option>
+<option value="tfa_1313" id="tfa_1313" class="">Albania</option>
+<option value="tfa_1314" id="tfa_1314" class="">Algeria</option>
+<option value="tfa_1315" id="tfa_1315" class="">American Samoa</option>
+<option value="tfa_1316" id="tfa_1316" class="">Andorra</option>
+<option value="tfa_1317" id="tfa_1317" class="">Angola</option>
+<option value="tfa_1318" id="tfa_1318" class="">Anguilla</option>
+<option value="tfa_1319" id="tfa_1319" class="">Antigua and Barbuda</option>
+<option value="tfa_1320" id="tfa_1320" class="">Argentina</option>
+<option value="tfa_1321" id="tfa_1321" class="">Armenia</option>
+<option value="tfa_1322" id="tfa_1322" class="">Aruba</option>
+<option value="tfa_1323" id="tfa_1323" class="">Australia</option>
+<option value="tfa_1324" id="tfa_1324" class="">Austria</option>
+<option value="tfa_1325" id="tfa_1325" class="">Azerbaijan</option>
+<option value="tfa_1326" id="tfa_1326" class="">Bahamas</option>
+<option value="tfa_1327" id="tfa_1327" class="">Bahrain</option>
+<option value="tfa_1328" id="tfa_1328" class="">Bangladesh</option>
+<option value="tfa_1329" id="tfa_1329" class="">Barbados</option>
+<option value="tfa_1330" id="tfa_1330" class="">Belarus</option>
+<option value="tfa_1331" id="tfa_1331" class="">Belgium</option>
+<option value="tfa_1332" id="tfa_1332" class="">Belize</option>
+<option value="tfa_1333" id="tfa_1333" class="">Benin</option>
+<option value="tfa_1334" id="tfa_1334" class="">Bermuda</option>
+<option value="tfa_1335" id="tfa_1335" class="">Bhutan</option>
+<option value="tfa_1336" id="tfa_1336" class="">Bolivia</option>
+<option value="tfa_1337" id="tfa_1337" class="">Bonaire</option>
+<option value="tfa_1338" id="tfa_1338" class="">Bosnia and Herzegovina</option>
+<option value="tfa_1339" id="tfa_1339" class="">Botswana</option>
+<option value="tfa_1340" id="tfa_1340" class="">Bouvet Island</option>
+<option value="tfa_1341" id="tfa_1341" class="">Brazil</option>
+<option value="tfa_1342" id="tfa_1342" class="">British Indian Ocean Territory</option>
+<option value="tfa_1343" id="tfa_1343" class="">British Virgin Islands</option>
+<option value="tfa_1344" id="tfa_1344" class="">Brunei</option>
+<option value="tfa_1345" id="tfa_1345" class="">Bulgaria</option>
+<option value="tfa_1346" id="tfa_1346" class="">Burkina Faso</option>
+<option value="tfa_1347" id="tfa_1347" class="">Burundi</option>
+<option value="tfa_1348" id="tfa_1348" class="">Cambodia</option>
+<option value="tfa_1349" id="tfa_1349" class="">Cameroon</option>
+<option value="tfa_1350" id="tfa_1350" class="">Canada</option>
+<option value="tfa_1351" id="tfa_1351" class="">Cape Verde</option>
+<option value="tfa_1352" id="tfa_1352" class="">Cayman Islands</option>
+<option value="tfa_1353" id="tfa_1353" class="">Central African Republic</option>
+<option value="tfa_1354" id="tfa_1354" class="">Chad</option>
+<option value="tfa_1355" id="tfa_1355" class="">Chile</option>
+<option value="tfa_1356" id="tfa_1356" class="">China</option>
+<option value="tfa_1357" id="tfa_1357" class="">Christmas Island</option>
+<option value="tfa_1358" id="tfa_1358" class="">Cocos (Keeling) Islands</option>
+<option value="tfa_1359" id="tfa_1359" class="">Colombia</option>
+<option value="tfa_1360" id="tfa_1360" class="">Comoros</option>
+<option value="tfa_1361" id="tfa_1361" class="">Cook Islands</option>
+<option value="tfa_1362" id="tfa_1362" class="">Costa Rica</option>
+<option value="tfa_1363" id="tfa_1363" class="">Côte d'Ivoire</option>
+<option value="tfa_1364" id="tfa_1364" class="">Croatia</option>
+<option value="tfa_1365" id="tfa_1365" class="">Cuba</option>
+<option value="tfa_1366" id="tfa_1366" class="">Curaçao</option>
+<option value="tfa_1367" id="tfa_1367" class="">Cyprus</option>
+<option value="tfa_1368" id="tfa_1368" class="">Czech Republic</option>
+<option value="tfa_1369" id="tfa_1369" class="">Democratic Republic of the Congo (DRC)</option>
+<option value="tfa_1370" id="tfa_1370" class="">Denmark</option>
+<option value="tfa_1371" id="tfa_1371" class="">Djibouti</option>
+<option value="tfa_1372" id="tfa_1372" class="">Dominica</option>
+<option value="tfa_1373" id="tfa_1373" class="">Dominican Republic</option>
+<option value="tfa_1374" id="tfa_1374" class="">Ecuador</option>
+<option value="tfa_1375" id="tfa_1375" class="">Egypt</option>
+<option value="tfa_1376" id="tfa_1376" class="">El Salvador</option>
+<option value="tfa_1377" id="tfa_1377" class="">Equatorial Guinea</option>
+<option value="tfa_1378" id="tfa_1378" class="">Eritrea</option>
+<option value="tfa_1379" id="tfa_1379" class="">Estonia</option>
+<option value="tfa_1380" id="tfa_1380" class="">Ethiopia</option>
+<option value="tfa_1381" id="tfa_1381" class="">Falkland Islands (Malvinas)</option>
+<option value="tfa_1382" id="tfa_1382" class="">Faroe Islands</option>
+<option value="tfa_1383" id="tfa_1383" class="">Fiji</option>
+<option value="tfa_1384" id="tfa_1384" class="">Finland</option>
+<option value="tfa_1385" id="tfa_1385" class="">France</option>
+<option value="tfa_1386" id="tfa_1386" class="">French Guiana</option>
+<option value="tfa_1387" id="tfa_1387" class="">French Polynesia</option>
+<option value="tfa_1388" id="tfa_1388" class="">French Southern Territories</option>
+<option value="tfa_1389" id="tfa_1389" class="">Gabon</option>
+<option value="tfa_1390" id="tfa_1390" class="">Gambia</option>
+<option value="tfa_1391" id="tfa_1391" class="">Georgia</option>
+<option value="tfa_1392" id="tfa_1392" class="">Germany</option>
+<option value="tfa_1393" id="tfa_1393" class="">Ghana</option>
+<option value="tfa_1394" id="tfa_1394" class="">Gibraltar</option>
+<option value="tfa_1395" id="tfa_1395" class="">Greece</option>
+<option value="tfa_1396" id="tfa_1396" class="">Greenland</option>
+<option value="tfa_1397" id="tfa_1397" class="">Grenada</option>
+<option value="tfa_1398" id="tfa_1398" class="">Guadeloupe</option>
+<option value="tfa_1399" id="tfa_1399" class="">Guam</option>
+<option value="tfa_1400" id="tfa_1400" class="">Guatemala</option>
+<option value="tfa_1401" id="tfa_1401" class="">Guernsey</option>
+<option value="tfa_1402" id="tfa_1402" class="">Guinea</option>
+<option value="tfa_1403" id="tfa_1403" class="">Guinea-Bissau</option>
+<option value="tfa_1404" id="tfa_1404" class="">Guyana</option>
+<option value="tfa_1405" id="tfa_1405" class="">Haiti</option>
+<option value="tfa_1406" id="tfa_1406" class="">Heard Island and McDonald Islands</option>
+<option value="tfa_1407" id="tfa_1407" class="">Holy See (Vatican City State)</option>
+<option value="tfa_1408" id="tfa_1408" class="">Honduras</option>
+<option value="tfa_1409" id="tfa_1409" class="">Hong Kong</option>
+<option value="tfa_1410" id="tfa_1410" class="">Hungary</option>
+<option value="tfa_1411" id="tfa_1411" class="">Iceland</option>
+<option value="tfa_1412" id="tfa_1412" class="">India</option>
+<option value="tfa_1413" id="tfa_1413" class="">Indonesia</option>
+<option value="tfa_1414" id="tfa_1414" class="">Iran</option>
+<option value="tfa_1415" id="tfa_1415" data-conditionals="#tfa_1615,#tfa_1566,#tfa_3058" class="">Iraq</option>
+<option value="tfa_1416" id="tfa_1416" class="">Ireland</option>
+<option value="tfa_1417" id="tfa_1417" class="">Isle of Man</option>
+<option value="tfa_1418" id="tfa_1418" class="">Israel</option>
+<option value="tfa_1419" id="tfa_1419" class="">Italy</option>
+<option value="tfa_1420" id="tfa_1420" class="">Jamaica</option>
+<option value="tfa_1421" id="tfa_1421" class="">Japan</option>
+<option value="tfa_1422" id="tfa_1422" class="">Jersey</option>
+<option value="tfa_1423" id="tfa_1423" data-conditionals="#tfa_1566" class="">Jordan</option>
+<option value="tfa_1424" id="tfa_1424" class="">Kazakhstan</option>
+<option value="tfa_1425" id="tfa_1425" class="">Kenya</option>
+<option value="tfa_1426" id="tfa_1426" class="">Kiribati</option>
+<option value="tfa_1427" id="tfa_1427" class="">Kosovo</option>
+<option value="tfa_1428" id="tfa_1428" class="">Kuwait</option>
+<option value="tfa_1429" id="tfa_1429" class="">Kyrgyzstan</option>
+<option value="tfa_1430" id="tfa_1430" class="">Laos</option>
+<option value="tfa_1431" id="tfa_1431" class="">Latvia</option>
+<option value="tfa_1432" id="tfa_1432" data-conditionals="#tfa_1566" class="">Lebanon</option>
+<option value="tfa_1433" id="tfa_1433" class="">Lesotho</option>
+<option value="tfa_1434" id="tfa_1434" class="">Liberia</option>
+<option value="tfa_1435" id="tfa_1435" class="">Libya</option>
+<option value="tfa_1436" id="tfa_1436" class="">Liechtenstein</option>
+<option value="tfa_1437" id="tfa_1437" class="">Lithuania</option>
+<option value="tfa_1438" id="tfa_1438" class="">Luxembourg</option>
+<option value="tfa_1439" id="tfa_1439" class="">Macao</option>
+<option value="tfa_1440" id="tfa_1440" class="">Madagascar</option>
+<option value="tfa_1441" id="tfa_1441" class="">Malawi</option>
+<option value="tfa_1442" id="tfa_1442" class="">Malaysia</option>
+<option value="tfa_1443" id="tfa_1443" class="">Maldives</option>
+<option value="tfa_1444" id="tfa_1444" class="">Mali</option>
+<option value="tfa_1445" id="tfa_1445" class="">Malta</option>
+<option value="tfa_1446" id="tfa_1446" class="">Marshall Islands</option>
+<option value="tfa_1447" id="tfa_1447" class="">Martinique</option>
+<option value="tfa_1448" id="tfa_1448" class="">Mauritania</option>
+<option value="tfa_1449" id="tfa_1449" class="">Mauritius</option>
+<option value="tfa_1450" id="tfa_1450" class="">Mayotte</option>
+<option value="tfa_1451" id="tfa_1451" class="">Mexico</option>
+<option value="tfa_1452" id="tfa_1452" class="">Micronesia</option>
+<option value="tfa_1453" id="tfa_1453" class="">Moldova</option>
+<option value="tfa_1454" id="tfa_1454" class="">Monaco</option>
+<option value="tfa_1455" id="tfa_1455" class="">Mongolia</option>
+<option value="tfa_1456" id="tfa_1456" class="">Montenegro</option>
+<option value="tfa_1457" id="tfa_1457" class="">Montserrat</option>
+<option value="tfa_1458" id="tfa_1458" class="">Morocco</option>
+<option value="tfa_1459" id="tfa_1459" class="">Mozambique</option>
+<option value="tfa_1460" id="tfa_1460" class="">Myanmar (Burma)</option>
+<option value="tfa_1461" id="tfa_1461" class="">Namibia</option>
+<option value="tfa_1462" id="tfa_1462" class="">Nauru</option>
+<option value="tfa_1463" id="tfa_1463" class="">Nepal</option>
+<option value="tfa_1464" id="tfa_1464" class="">Netherlands</option>
+<option value="tfa_1465" id="tfa_1465" class="">New Caledonia</option>
+<option value="tfa_1466" id="tfa_1466" class="">New Zealand</option>
+<option value="tfa_1467" id="tfa_1467" class="">Nicaragua</option>
+<option value="tfa_1468" id="tfa_1468" class="">Niger</option>
+<option value="tfa_1469" id="tfa_1469" class="">Nigeria</option>
+<option value="tfa_1470" id="tfa_1470" class="">Niue</option>
+<option value="tfa_1471" id="tfa_1471" class="">None (Stateless)</option>
+<option value="tfa_1472" id="tfa_1472" class="">Norfolk Island</option>
+<option value="tfa_1473" id="tfa_1473" class="">North Korea</option>
+<option value="tfa_1474" id="tfa_1474" class="">Northern Macedonia</option>
+<option value="tfa_1475" id="tfa_1475" class="">Northern Mariana Islands</option>
+<option value="tfa_1476" id="tfa_1476" class="">Norway</option>
+<option value="tfa_1477" id="tfa_1477" class="">Oman</option>
+<option value="tfa_1478" id="tfa_1478" class="">Pakistan</option>
+<option value="tfa_1479" id="tfa_1479" class="">Palau</option>
+<option value="tfa_1480" id="tfa_1480" data-conditionals="#tfa_1566" class="">Palestine</option>
+<option value="tfa_1481" id="tfa_1481" class="">Panama</option>
+<option value="tfa_1482" id="tfa_1482" class="">Papua New Guinea</option>
+<option value="tfa_1483" id="tfa_1483" class="">Paraguay</option>
+<option value="tfa_1484" id="tfa_1484" class="">Peru</option>
+<option value="tfa_1485" id="tfa_1485" class="">Philippines</option>
+<option value="tfa_1486" id="tfa_1486" class="">Pitcairn</option>
+<option value="tfa_1487" id="tfa_1487" class="">Poland</option>
+<option value="tfa_1488" id="tfa_1488" class="">Portugal</option>
+<option value="tfa_1489" id="tfa_1489" class="">Puerto Rico</option>
+<option value="tfa_1490" id="tfa_1490" class="">Qatar</option>
+<option value="tfa_1491" id="tfa_1491" class="">Republic of the Congo (Congo-Brazzaville)</option>
+<option value="tfa_1492" id="tfa_1492" class="">Réunion</option>
+<option value="tfa_1493" id="tfa_1493" class="">Romania</option>
+<option value="tfa_1494" id="tfa_1494" class="">Russia</option>
+<option value="tfa_1495" id="tfa_1495" class="">Rwanda</option>
+<option value="tfa_1496" id="tfa_1496" class="">Saint Barthélemy</option>
+<option value="tfa_1497" id="tfa_1497" class="">Saint Helena</option>
+<option value="tfa_1498" id="tfa_1498" class="">Saint Kitts and Nevis</option>
+<option value="tfa_1499" id="tfa_1499" class="">Saint Lucia</option>
+<option value="tfa_1500" id="tfa_1500" class="">Saint Martin (French part)</option>
+<option value="tfa_1501" id="tfa_1501" class="">Saint Pierre and Miquelon</option>
+<option value="tfa_1502" id="tfa_1502" class="">Saint Vincent and the Grenadines</option>
+<option value="tfa_1503" id="tfa_1503" class="">Samoa</option>
+<option value="tfa_1504" id="tfa_1504" class="">San Marino</option>
+<option value="tfa_1505" id="tfa_1505" class="">Sao Tome and Principe</option>
+<option value="tfa_1506" id="tfa_1506" class="">Saudi Arabia</option>
+<option value="tfa_1507" id="tfa_1507" class="">Senegal</option>
+<option value="tfa_1508" id="tfa_1508" class="">Serbia</option>
+<option value="tfa_1509" id="tfa_1509" class="">Seychelles</option>
+<option value="tfa_1510" id="tfa_1510" class="">Sierra Leone</option>
+<option value="tfa_1511" id="tfa_1511" class="">Singapore</option>
+<option value="tfa_1512" id="tfa_1512" class="">Sint Maarten (Dutch part)</option>
+<option value="tfa_1513" id="tfa_1513" class="">Slovakia</option>
+<option value="tfa_1514" id="tfa_1514" class="">Slovenia</option>
+<option value="tfa_1515" id="tfa_1515" class="">Solomon Islands</option>
+<option value="tfa_1516" id="tfa_1516" class="">Somalia</option>
+<option value="tfa_1517" id="tfa_1517" class="">South Africa</option>
+<option value="tfa_1518" id="tfa_1518" class="">South Georgia and the South Sandwich Islands</option>
+<option value="tfa_1519" id="tfa_1519" class="">South Korea</option>
+<option value="tfa_1520" id="tfa_1520" class="">South Sudan</option>
+<option value="tfa_1521" id="tfa_1521" class="">Spain</option>
+<option value="tfa_1522" id="tfa_1522" class="">Sri Lanka</option>
+<option value="tfa_1523" id="tfa_1523" class="">Sudan</option>
+<option value="tfa_1524" id="tfa_1524" class="">Suriname</option>
+<option value="tfa_1525" id="tfa_1525" class="">Svalbard and Jan Mayen</option>
+<option value="tfa_1526" id="tfa_1526" class="">Swaziland</option>
+<option value="tfa_1527" id="tfa_1527" class="">Sweden</option>
+<option value="tfa_1528" id="tfa_1528" class="">Switzerland</option>
+<option value="tfa_1529" id="tfa_1529" data-conditionals="#tfa_1566,#tfa_2982" class="">Syria</option>
+<option value="tfa_1530" id="tfa_1530" class="">Taiwan</option>
+<option value="tfa_1531" id="tfa_1531" class="">Tajikistan</option>
+<option value="tfa_1532" id="tfa_1532" class="">Tanzania</option>
+<option value="tfa_1533" id="tfa_1533" class="">Thailand</option>
+<option value="tfa_1534" id="tfa_1534" class="">Tibet</option>
+<option value="tfa_1535" id="tfa_1535" class="">Timor-Leste</option>
+<option value="tfa_1536" id="tfa_1536" class="">Togo</option>
+<option value="tfa_1537" id="tfa_1537" class="">Tokelau</option>
+<option value="tfa_1538" id="tfa_1538" class="">Tonga</option>
+<option value="tfa_1539" id="tfa_1539" class="">Trinidad and Tobago</option>
+<option value="tfa_1540" id="tfa_1540" class="">Tunisia</option>
+<option value="tfa_1541" id="tfa_1541" class="">Turkey</option>
+<option value="tfa_1542" id="tfa_1542" class="">Turkmenistan</option>
+<option value="tfa_1543" id="tfa_1543" class="">Turks and Caicos Islands</option>
+<option value="tfa_1544" id="tfa_1544" class="">Tuvalu</option>
+<option value="tfa_1545" id="tfa_1545" class="">U.S. Virgin Islands</option>
+<option value="tfa_1546" id="tfa_1546" class="">Uganda</option>
+<option value="tfa_1547" id="tfa_1547" class="">Ukraine</option>
+<option value="tfa_1548" id="tfa_1548" class="">United Arab Emirates</option>
+<option value="tfa_1549" id="tfa_1549" class="">United Kingdom</option>
+<option value="tfa_1550" id="tfa_1550" class="">United States</option>
+<option value="tfa_1551" id="tfa_1551" class="">United States Minor Outlying Islands</option>
+<option value="tfa_1552" id="tfa_1552" class="">Uruguay</option>
+<option value="tfa_1553" id="tfa_1553" class="">Uzbekistan</option>
+<option value="tfa_1554" id="tfa_1554" class="">Vanuatu</option>
+<option value="tfa_1555" id="tfa_1555" class="">Venezuela</option>
+<option value="tfa_1556" id="tfa_1556" class="">Vietnam</option>
+<option value="tfa_1557" id="tfa_1557" class="">Wallis and Futuna</option>
+<option value="tfa_1558" id="tfa_1558" class="">Western Sahara</option>
+<option value="tfa_1559" id="tfa_1559" class="">Yemen</option>
+<option value="tfa_1560" id="tfa_1560" class="">Zambia</option>
+<option value="tfa_1561" id="tfa_1561" class="">Zimbabwe</option></select><span class="field-hint-inactive" id="tfa_1057-H"><span id="tfa_1057-HH" class="hint">Please select a nationality. If you have more than one nationality (for example, you are Syrian and Lebanese), use "Add another nationality" to add more than one nationality. If you are stateless and have no nationality, please select "Stateless".</span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_1058-D" role="radiogroup" aria-labelledby="tfa_1058-L" data-tfa-labelledby="-L tfa_1058-L">
+<label id="tfa_1058-L" class="label preField " data-tfa-check-label-for="tfa_1058"><span id="docs-internal-guid-b18947e0-7fff-a766-d309-bb6460a5bca2"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span id="docs-internal-guid-fe7f791e-7fff-a757-98e6-22e5b9051e3b"></span></p><div align="left" style="margin-left:0pt;" dir="ltr"><span style="font-size: 14.4px; white-space: pre-wrap;">Did you leave your home due to conflict, persecution, unrest, or other safety concerns?</span></div></span></label><br><div class="inputWrapper"><span id="tfa_1058" class="choices horizontal "><span class="oneChoice"><input type="radio" value="tfa_1059" class="" id="tfa_1059" name="tfa_1058" aria-labelledby="tfa_1059-L" data-tfa-labelledby="tfa_1058-L tfa_1059-L" data-tfa-parent-id="tfa_1058"><label class="label postField" id="tfa_1059-L" for="tfa_1059"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1060" class="" id="tfa_1060" name="tfa_1058" aria-labelledby="tfa_1060-L" data-tfa-labelledby="tfa_1058-L tfa_1060-L" data-tfa-parent-id="tfa_1058"><label class="label postField" id="tfa_1060-L" for="tfa_1060"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div id="tfa_2988" class="section group" data-condition="`#tfa_1201`">
+<div class="oneField field-container-D    " id="tfa_2985-D" role="radiogroup" aria-labelledby="tfa_2985-L" data-tfa-labelledby="-L tfa_2985-L">
+<label id="tfa_2985-L" class="label preField " data-tfa-check-label-for="tfa_2985">Do you need help entering the United States?</label><br><div class="inputWrapper"><span id="tfa_2985" class="choices horizontal " data-condition="`#tfa_1201`"><span class="oneChoice"><input type="radio" value="tfa_2986" class="" id="tfa_2986" name="tfa_2985" data-conditionals="#tfa_3070" aria-labelledby="tfa_2986-L" data-tfa-labelledby="tfa_2985-L tfa_2986-L" data-tfa-parent-id="tfa_2985"><label class="label postField" id="tfa_2986-L" for="tfa_2986"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_2987" class="" id="tfa_2987" name="tfa_2985" aria-labelledby="tfa_2987-L" data-tfa-labelledby="tfa_2985-L tfa_2987-L" data-tfa-parent-id="tfa_2985"><label class="label postField" id="tfa_2987-L" for="tfa_2987"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div id="tfa_3004" class="section group">
+<div class="oneField field-container-D    " id="tfa_3005-D" role="radiogroup" aria-labelledby="tfa_3005-L" data-tfa-labelledby="-L tfa_3005-L">
+<label id="tfa_3005-L" class="label preField " data-tfa-check-label-for="tfa_3005"><span id="docs-internal-guid-f0e52f33-7fff-f1e2-e97e-3a5ffa1226b6"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Do you have family members in a safe third country that you would like to settle in? </span></p></span></label><br><div class="inputWrapper">
+<span id="tfa_3005" class="choices horizontal "><span class="oneChoice"><input type="radio" value="tfa_3006" class="" id="tfa_3006" name="tfa_3005" data-conditionals="#tfa_3008" aria-labelledby="tfa_3006-L" data-tfa-labelledby="tfa_3005-L tfa_3006-L" data-tfa-parent-id="tfa_3005" aria-describedby="tfa_3005-HH"><label class="label postField" id="tfa_3006-L" for="tfa_3006"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_3007" class="" id="tfa_3007" name="tfa_3005" aria-labelledby="tfa_3007-L" data-tfa-labelledby="tfa_3005-L tfa_3007-L" data-tfa-parent-id="tfa_3005" aria-describedby="tfa_3005-HH"><label class="label postField" id="tfa_3007-L" for="tfa_3007"><span class="input-radio-faux"></span>No</label></span></span><span class="field-hint-inactive" id="tfa_3005-H"><span id="tfa_3005-HH" class="hint">Please only select yes to this question if you have a spouse/partner, child, parent, sibling, grandparent, or grandchild abroad.</span></span>
+</div>
+</div>
+<div class="oneField field-container-D repeat   " id="tfa_3008-D" data-repeatlabel="Add another country" role="group" aria-labelledby="tfa_3008-L" data-tfa-labelledby="-L tfa_3008-L">
+<label id="tfa_3008-L" class="label preField " data-tfa-check-label-for="tfa_3008"><span id="docs-internal-guid-770c0ec9-7fff-18b9-8cce-e9359aa5f968"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Where are your relatives located?</span></p></span></label><br><div class="inputWrapper"><table id="tfa_3008" class="choices columns2 " data-condition="`#tfa_3006`">
+<tr>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_3009" class="" id="tfa_3009" name="tfa_3009" aria-labelledby="tfa_3009-L" data-tfa-labelledby="tfa_3008-L tfa_3009-L" data-tfa-parent-id="tfa_3008"><label class="label postField" id="tfa_3009-L" for="tfa_3009"><span class="input-checkbox-faux"></span>Canada</label></span></td>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_3010" class="" id="tfa_3010" name="tfa_3010" data-conditionals="#tfa_2984" aria-labelledby="tfa_3010-L" data-tfa-labelledby="tfa_3008-L tfa_3010-L" data-tfa-parent-id="tfa_3008"><label class="label postField" id="tfa_3010-L" for="tfa_3010"><span class="input-checkbox-faux"></span>France</label></span></td>
+</tr>
+<tr>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_3011" class="" id="tfa_3011" name="tfa_3011" data-conditionals="#tfa_2984" aria-labelledby="tfa_3011-L" data-tfa-labelledby="tfa_3008-L tfa_3011-L" data-tfa-parent-id="tfa_3008"><label class="label postField" id="tfa_3011-L" for="tfa_3011"><span class="input-checkbox-faux"></span>Germany</label></span></td>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_3012" class="" id="tfa_3012" name="tfa_3012" data-conditionals="#tfa_2984" aria-labelledby="tfa_3012-L" data-tfa-labelledby="tfa_3008-L tfa_3012-L" data-tfa-parent-id="tfa_3008"><label class="label postField" id="tfa_3012-L" for="tfa_3012"><span class="input-checkbox-faux"></span>Netherlands</label></span></td>
+</tr>
+<tr>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_3013" class="" id="tfa_3013" name="tfa_3013" data-conditionals="#tfa_2984" aria-labelledby="tfa_3013-L" data-tfa-labelledby="tfa_3008-L tfa_3013-L" data-tfa-parent-id="tfa_3008"><label class="label postField" id="tfa_3013-L" for="tfa_3013"><span class="input-checkbox-faux"></span>Norway</label></span></td>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_3014" class="" id="tfa_3014" name="tfa_3014" data-conditionals="#tfa_2984" aria-labelledby="tfa_3014-L" data-tfa-labelledby="tfa_3008-L tfa_3014-L" data-tfa-parent-id="tfa_3008"><label class="label postField" id="tfa_3014-L" for="tfa_3014"><span class="input-checkbox-faux"></span>Sweden</label></span></td>
+</tr>
+<tr>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_3015" class="" id="tfa_3015" name="tfa_3015" data-conditionals="#tfa_2984" aria-labelledby="tfa_3015-L" data-tfa-labelledby="tfa_3008-L tfa_3015-L" data-tfa-parent-id="tfa_3008"><label class="label postField" id="tfa_3015-L" for="tfa_3015"><span class="input-checkbox-faux"></span>United Kingdom</label></span></td>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_3016" class="" id="tfa_3016" name="tfa_3016" data-conditionals="#tfa_2984" aria-labelledby="tfa_3016-L" data-tfa-labelledby="tfa_3008-L tfa_3016-L" data-tfa-parent-id="tfa_3008"><label class="label postField" id="tfa_3016-L" for="tfa_3016"><span class="input-checkbox-faux"></span>United States</label></span></td>
+</tr>
+<tr><td><span class="oneChoice"><input type="checkbox" value="tfa_3017" class="" id="tfa_3017" name="tfa_3017" aria-labelledby="tfa_3017-L" data-tfa-labelledby="tfa_3008-L tfa_3017-L" data-tfa-parent-id="tfa_3008"><label class="label postField" id="tfa_3017-L" for="tfa_3017"><span class="input-checkbox-faux"></span>Other</label></span></td></tr>
+</table></div>
+</div>
+</div>
+</div>
+<div id="tfa_2989" class="section group" data-condition="`#tfa_1173`">
+<div id="tfa_1572" class="section group">
+<div class="oneField field-container-D    " id="tfa_1563-D" role="radiogroup" aria-labelledby="tfa_1563-L" data-tfa-labelledby="-L tfa_1563-L">
+<label id="tfa_1563-L" class="label preField " data-tfa-check-label-for="tfa_1563"><span id="docs-internal-guid-fff07ab3-7fff-2ad3-aec4-e5148353219c"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Are you or a member of your immediate family registered or recorded with UNHCR?</span></p></span></label><br><div class="inputWrapper">
+<span id="tfa_1563" class="choices horizontal "><span class="oneChoice"><input type="radio" value="tfa_1564" class="" id="tfa_1564" name="tfa_1563" data-conditionals="#tfa_1566" aria-labelledby="tfa_1564-L" data-tfa-labelledby="tfa_1563-L tfa_1564-L" data-tfa-parent-id="tfa_1563" aria-describedby="tfa_1563-HH"><label class="label postField" id="tfa_1564-L" for="tfa_1564"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1565" class="" id="tfa_1565" name="tfa_1563" aria-labelledby="tfa_1565-L" data-tfa-labelledby="tfa_1563-L tfa_1565-L" data-tfa-parent-id="tfa_1563" aria-describedby="tfa_1563-HH"><label class="label postField" id="tfa_1565-L" for="tfa_1565"><span class="input-radio-faux"></span>No</label></span></span><span class="field-hint-inactive" id="tfa_1563-H"><span id="tfa_1563-HH" class="hint">UNHCR is a UN agency that provides aid and services to refugees. If you are registered with UNHCR, you'll have a certificate or bar code with a case number attached to it.</span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_1566-D" role="radiogroup" aria-labelledby="tfa_1566-L" data-tfa-labelledby="-L tfa_1566-L">
+<label id="tfa_1566-L" class="label preField " data-tfa-check-label-for="tfa_1566"><span id="docs-internal-guid-f3510616-7fff-d15a-91a0-c3c0b74d2194"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Have you had an interview to determine your refugee status with UNHCR?</span></p></span></label><br><div class="inputWrapper">
+<span id="tfa_1566" class="choices horizontal " data-condition="`#tfa_1564` AND ((`#tfa_1182` AND (NOT (`#tfa_1529`) AND NOT (`#tfa_1480`) AND NOT (`#tfa_1415`) AND NOT (`#tfa_1432`))) OR (`#tfa_1173` AND (NOT (`#tfa_1480`) AND NOT (`#tfa_1529`) AND NOT (`#tfa_1423`))))"><span class="oneChoice"><input type="radio" value="tfa_1567" class="calcval-TRUE" id="tfa_1567" name="tfa_1566" data-conditionals="#tfa_1569,#tfa_2974" aria-labelledby="tfa_1567-L" data-tfa-labelledby="tfa_1566-L tfa_1567-L" data-tfa-parent-id="tfa_1566" aria-describedby="tfa_1566-HH"><label class="label postField" id="tfa_1567-L" for="tfa_1567"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1568" class="" id="tfa_1568" name="tfa_1566" aria-labelledby="tfa_1568-L" data-tfa-labelledby="tfa_1566-L tfa_1568-L" data-tfa-parent-id="tfa_1566" aria-describedby="tfa_1566-HH"><label class="label postField" id="tfa_1568-L" for="tfa_1568"><span class="input-radio-faux"></span>No</label></span></span><span class="field-hint-inactive" id="tfa_1566-H"><span id="tfa_1566-HH" class="hint">A refugee status determination interview is a formal interview with a UNHCR officer. The interview focuses on whether you are a refugee. This means asking if you are outside your country of origin, if you face a risk of being harmed in your country, and other questions. 
+
+It is different from an interview to register you or to consider you from resettlement.</span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_1569-D" role="radiogroup" aria-labelledby="tfa_1569-L" data-tfa-labelledby="-L tfa_1569-L">
+<label id="tfa_1569-L" class="label preField " data-tfa-check-label-for="tfa_1569"><span id="docs-internal-guid-37cff7e6-7fff-d3f0-8165-1e1e1fb32588"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Have you been issued a denial of your refugee claim by UNHCR?</span></p></span></label><br><div class="inputWrapper">
+<span id="tfa_1569" class="choices horizontal " data-condition="`#tfa_1567`"><span class="oneChoice"><input type="radio" value="tfa_1570" class="calcval-TRUE" id="tfa_1570" name="tfa_1569" data-conditionals="#tfa_2974" aria-labelledby="tfa_1570-L" data-tfa-labelledby="tfa_1569-L tfa_1570-L" data-tfa-parent-id="tfa_1569" aria-describedby="tfa_1569-HH"><label class="label postField" id="tfa_1570-L" for="tfa_1570"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1571" class="" id="tfa_1571" name="tfa_1569" aria-labelledby="tfa_1571-L" data-tfa-labelledby="tfa_1569-L tfa_1571-L" data-tfa-parent-id="tfa_1569" aria-describedby="tfa_1569-HH"><label class="label postField" id="tfa_1571-L" for="tfa_1571"><span class="input-radio-faux"></span>No</label></span></span><span class="field-hint-inactive" id="tfa_1569-H"><span id="tfa_1569-HH" class="hint">A denial of refugee status means that UNHCR interviewed you and issued a negative decision. If you have a refugee status denial, UNHCR should have issued you a letter and explained to you the reason for this denial.</span></span>
+</div>
+</div>
+</div>
+<div id="tfa_1601" class="section group">
+<div class="oneField field-container-D    " id="tfa_1573-D" role="radiogroup" aria-labelledby="tfa_1573-L" data-tfa-labelledby="-L tfa_1573-L">
+<label id="tfa_1573-L" class="label preField " data-tfa-check-label-for="tfa_1573"><span id="docs-internal-guid-94cba28c-7fff-7722-01eb-f0fb05988d9b"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Do you or your immediate family have a case with the U.S. refugee resettlement program?&nbsp;</span></p></span></label><br><div class="inputWrapper">
+<span id="tfa_1573" class="choices horizontal "><span class="oneChoice"><input type="radio" value="tfa_1574" class="" id="tfa_1574" name="tfa_1573" data-conditionals="#tfa_1576,#tfa_2978" aria-labelledby="tfa_1574-L" data-tfa-labelledby="tfa_1573-L tfa_1574-L" data-tfa-parent-id="tfa_1573" aria-describedby="tfa_1573-HH"><label class="label postField" id="tfa_1574-L" for="tfa_1574"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1575" class="" id="tfa_1575" name="tfa_1573" aria-labelledby="tfa_1575-L" data-tfa-labelledby="tfa_1573-L tfa_1575-L" data-tfa-parent-id="tfa_1573" aria-describedby="tfa_1573-HH"><label class="label postField" id="tfa_1575-L" for="tfa_1575"><span class="input-radio-faux"></span>No</label></span></span><span class="field-hint-inactive" id="tfa_1573-H"><span id="tfa_1573-HH" class="hint">Depending on the country, you might have a case with a refugee support center such as the IOM, ICMC, or HIAS for U.S. refugee resettlement.</span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_1576-D">
+<label id="tfa_1576-L" class="label preField " for="tfa_1576"><span style="font-size: 14.4px; white-space: pre-wrap;">What is your case status?</span></label><br><div class="inputWrapper"><select id="tfa_1576" name="tfa_1576" data-condition="`#tfa_1574`" title="What is your case status?" class=""><option value="">Please select...</option>
+<option value="tfa_1595" id="tfa_1595" class="">Waiting for employment verification or closed because employment wasn't verified (Iraqis and Afghans with US government work only</option>
+<option value="tfa_1596" id="tfa_1596" data-conditionals="#tfa_1577" class="">Waiting for the pre-screening interview</option>
+<option value="tfa_1597" id="tfa_1597" data-conditionals="#tfa_1577" class="">Waiting for the interview with USCIS</option>
+<option value="tfa_1598" id="tfa_1598" class="">Waiting for a final decision</option>
+<option value="tfa_1599" id="tfa_1599" data-conditionals="#tfa_1580,#tfa_1585,#tfa_2976" class="">Application denied</option>
+<option value="tfa_1600" id="tfa_1600" class="">Application approved</option></select></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_1577-D" role="radiogroup" aria-labelledby="tfa_1577-L" data-tfa-labelledby="-L tfa_1577-L">
+<label id="tfa_1577-L" class="label preField " data-tfa-check-label-for="tfa_1577"><span id="docs-internal-guid-a6ca90ec-7fff-ad49-9219-558bab6e9973"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Do you have an interview date?</span></p></span></label><br><div class="inputWrapper"><span id="tfa_1577" class="choices horizontal " data-condition="`#tfa_1596` OR `#tfa_1597`"><span class="oneChoice"><input type="radio" value="tfa_1578" class="" id="tfa_1578" name="tfa_1577" data-conditionals="#tfa_2976" aria-labelledby="tfa_1578-L" data-tfa-labelledby="tfa_1577-L tfa_1578-L" data-tfa-parent-id="tfa_1577"><label class="label postField" id="tfa_1578-L" for="tfa_1578"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1579" class="" id="tfa_1579" name="tfa_1577" aria-labelledby="tfa_1579-L" data-tfa-labelledby="tfa_1577-L tfa_1579-L" data-tfa-parent-id="tfa_1577"><label class="label postField" id="tfa_1579-L" for="tfa_1579"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_1580-D">
+<label id="tfa_1580-L" class="label preField " for="tfa_1580"><span id="docs-internal-guid-96f0b78b-7fff-24f9-5a82-70a2635b4b19"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">What is the reason for your rejection?&nbsp;&nbsp;</span></p></span></label><br><div class="inputWrapper">
+<select id="tfa_1580" name="tfa_1580" data-condition="`#tfa_1599`" title="What is the reason for your rejection?  " aria-describedby="tfa_1580-HH" class=""><option value="">Please select...</option>
+<option value="tfa_1588" id="tfa_1588" class="">Special Humanitarian Concern</option>
+<option value="tfa_1589" id="tfa_1589" class="">Refugee Claim (Persecution or Protected Characteristic)</option>
+<option value="tfa_1590" id="tfa_1590" class="">Persecution of Others</option>
+<option value="tfa_1591" id="tfa_1591" class="">Firm Resettlement</option>
+<option value="tfa_1592" id="tfa_1592" data-conditionals="#tfa_1581" class="">Admissibility</option>
+<option value="tfa_1593" id="tfa_1593" class="">Credibility</option>
+<option value="tfa_1594" id="tfa_1594" data-conditionals="#tfa_1585,#tfa_2976" class="">Other</option></select><span class="field-hint-inactive" id="tfa_1580-H"><span id="tfa_1580-HH" class="hint">You can find this on the rejection letter or "Notice of Ineligibility" you received. </span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_1581-D" role="radiogroup" aria-labelledby="tfa_1581-L" data-tfa-labelledby="-L tfa_1581-L">
+<label id="tfa_1581-L" class="label preField " data-tfa-check-label-for="tfa_1581"><span id="docs-internal-guid-9e9238e3-7fff-a79b-cb75-4369ce4b56ce"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Does your Notice of Ineligibility say that an I-602 waiver can be filed?</span></p></span></label><br><div class="inputWrapper"><span id="tfa_1581" class="choices horizontal " data-condition="`#tfa_1592`"><span class="oneChoice"><input type="radio" value="tfa_1582" class="" id="tfa_1582" name="tfa_1581" data-conditionals="#tfa_2976" aria-labelledby="tfa_1582-L" data-tfa-labelledby="tfa_1581-L tfa_1582-L" data-tfa-parent-id="tfa_1581"><label class="label postField" id="tfa_1582-L" for="tfa_1582"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1583" class="" id="tfa_1583" name="tfa_1581" aria-labelledby="tfa_1583-L" data-tfa-labelledby="tfa_1581-L tfa_1583-L" data-tfa-parent-id="tfa_1581"><label class="label postField" id="tfa_1583-L" for="tfa_1583"><span class="input-radio-faux"></span>No</label></span><span class="oneChoice"><input type="radio" value="tfa_1584" class="" id="tfa_1584" name="tfa_1581" aria-labelledby="tfa_1584-L" data-tfa-labelledby="tfa_1581-L tfa_1584-L" data-tfa-parent-id="tfa_1581"><label class="label postField" id="tfa_1584-L" for="tfa_1584"><span class="input-radio-faux"></span>Unknown</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_1585-D" role="radiogroup" aria-labelledby="tfa_1585-L" data-tfa-labelledby="-L tfa_1585-L">
+<label id="tfa_1585-L" class="label preField " data-tfa-check-label-for="tfa_1585"><span id="docs-internal-guid-910aa065-7fff-07a6-b1fa-9c9039be9c43"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Have you already filed a Request for Review (RFR)?</span></p></span></label><br><div class="inputWrapper">
+<span id="tfa_1585" class="choices horizontal " data-condition="`#tfa_1599` AND NOT (`#tfa_1594`)"><span class="oneChoice"><input type="radio" value="tfa_1586" class="" id="tfa_1586" name="tfa_1585" aria-labelledby="tfa_1586-L" data-tfa-labelledby="tfa_1585-L tfa_1586-L" data-tfa-parent-id="tfa_1585" aria-describedby="tfa_1585-HH"><label class="label postField" id="tfa_1586-L" for="tfa_1586"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1587" class="" id="tfa_1587" name="tfa_1585" data-conditionals="#tfa_2976" aria-labelledby="tfa_1587-L" data-tfa-labelledby="tfa_1585-L tfa_1587-L" data-tfa-parent-id="tfa_1585" aria-describedby="tfa_1585-HH"><label class="label postField" id="tfa_1587-L" for="tfa_1587"><span class="input-radio-faux"></span>No</label></span></span><span class="field-hint-inactive" id="tfa_1585-H"><span id="tfa_1585-HH" class="hint">After a person receives a rejection from U.S. refugee resettlement, they can request that the U.S. government reconsider its decision. This is called a Request for Review (RFR). There is no particular form. 
+
+If you wrote to ask the U.S. government to reconsider its decision after you received a denial letter, you should answer "Yes."</span></span>
+</div>
+</div>
+</div>
+<div id="tfa_1602" class="section group">
+<div class="oneField field-container-D    " id="tfa_1603-D" role="radiogroup" aria-labelledby="tfa_1603-L" data-tfa-labelledby="-L tfa_1603-L">
+<label id="tfa_1603-L" class="label preField " data-tfa-check-label-for="tfa_1603"><span style="font-size: 14.4px; white-space: pre-wrap;">Have you or your immediate family ever been to the United States?</span></label><br><div class="inputWrapper">
+<span id="tfa_1603" class="choices horizontal " data-condition="NOT (`#tfa_1299`)"><span class="oneChoice"><input type="radio" value="tfa_1604" class="" id="tfa_1604" name="tfa_1603" data-conditionals="#tfa_1606,#tfa_1612" aria-labelledby="tfa_1604-L" data-tfa-labelledby="tfa_1603-L tfa_1604-L" data-tfa-parent-id="tfa_1603" aria-describedby="tfa_1603-HH"><label class="label postField" id="tfa_1604-L" for="tfa_1604"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1605" class="" id="tfa_1605" name="tfa_1603" aria-labelledby="tfa_1605-L" data-tfa-labelledby="tfa_1603-L tfa_1605-L" data-tfa-parent-id="tfa_1603" aria-describedby="tfa_1603-HH"><label class="label postField" id="tfa_1605-L" for="tfa_1605"><span class="input-radio-faux"></span>No</label></span></span><span class="field-hint-inactive" id="tfa_1603-H"><span id="tfa_1603-HH" class="hint">Please select yes to the question this applies to you or your spouse or partner.</span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_1606-D" role="radiogroup" aria-labelledby="tfa_1606-L" data-tfa-labelledby="-L tfa_1606-L">
+<label id="tfa_1606-L" class="label preField " data-tfa-check-label-for="tfa_1606"><span id="docs-internal-guid-ec6f6b02-7fff-f292-4bcc-498c78f875aa"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Have you or your immediate family ever been resettled to the United States?</span></p></span></label><br><div class="inputWrapper">
+<span id="tfa_1606" class="choices horizontal " data-condition="`#tfa_1604`"><span class="oneChoice"><input type="radio" value="tfa_1607" class="" id="tfa_1607" name="tfa_1606" aria-labelledby="tfa_1607-L" data-tfa-labelledby="tfa_1606-L tfa_1607-L" data-tfa-parent-id="tfa_1606" aria-describedby="tfa_1606-HH"><label class="label postField" id="tfa_1607-L" for="tfa_1607"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1608" class="" id="tfa_1608" name="tfa_1606" aria-labelledby="tfa_1608-L" data-tfa-labelledby="tfa_1606-L tfa_1608-L" data-tfa-parent-id="tfa_1606" aria-describedby="tfa_1606-HH"><label class="label postField" id="tfa_1608-L" for="tfa_1608"><span class="input-radio-faux"></span>No</label></span></span><span class="field-hint-inactive" id="tfa_1606-H"><span id="tfa_1606-HH" class="hint">Please select yes to the question this applies to you or your spouse or partner.</span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_1612-D" role="radiogroup" aria-labelledby="tfa_1612-L" data-tfa-labelledby="-L tfa_1612-L">
+<label id="tfa_1612-L" class="label preField " data-tfa-check-label-for="tfa_1612"><span id="docs-internal-guid-ec6f6b02-7fff-f292-4bcc-498c78f875aa"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Have you ever or someone from your immediate family received a green card to the United States?</span></p></span></label><br><div class="inputWrapper">
+<span id="tfa_1612" class="choices horizontal " data-condition="`#tfa_1604`"><span class="oneChoice"><input type="radio" value="tfa_1613" class="" id="tfa_1613" name="tfa_1612" data-conditionals="#tfa_2978" aria-labelledby="tfa_1613-L" data-tfa-labelledby="tfa_1612-L tfa_1613-L" data-tfa-parent-id="tfa_1612" aria-describedby="tfa_1612-HH"><label class="label postField" id="tfa_1613-L" for="tfa_1613"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1614" class="" id="tfa_1614" name="tfa_1612" aria-labelledby="tfa_1614-L" data-tfa-labelledby="tfa_1612-L tfa_1614-L" data-tfa-parent-id="tfa_1612" aria-describedby="tfa_1612-HH"><label class="label postField" id="tfa_1614-L" for="tfa_1614"><span class="input-radio-faux"></span>No</label></span></span><span class="field-hint-inactive" id="tfa_1612-H"><span id="tfa_1612-HH" class="hint">Please select yes to the question this applies to you or your spouse or partner.</span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_1615-D" role="radiogroup" aria-labelledby="tfa_1615-L" data-tfa-labelledby="-L tfa_1615-L">
+<label id="tfa_1615-L" class="label preField " data-tfa-check-label-for="tfa_1615"><span id="docs-internal-guid-66dddaa0-7fff-cd0b-42b3-fb0dfa9f58ce"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Have you or someone from your immediate family applied for a U.S. Special Immigrant Visa (SIV)?&nbsp;</span></p></span></label><br><div class="inputWrapper">
+<span id="tfa_1615" class="choices horizontal " data-condition="`#tfa_1311` OR `#tfa_1415`"><span class="oneChoice"><input type="radio" value="tfa_1616" class="" id="tfa_1616" name="tfa_1615" data-conditionals="#tfa_1618" aria-labelledby="tfa_1616-L" data-tfa-labelledby="tfa_1615-L tfa_1616-L" data-tfa-parent-id="tfa_1615" aria-describedby="tfa_1615-HH"><label class="label postField" id="tfa_1616-L" for="tfa_1616"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1617" class="" id="tfa_1617" name="tfa_1615" aria-labelledby="tfa_1617-L" data-tfa-labelledby="tfa_1615-L tfa_1617-L" data-tfa-parent-id="tfa_1615" aria-describedby="tfa_1615-HH"><label class="label postField" id="tfa_1617-L" for="tfa_1617"><span class="input-radio-faux"></span>No</label></span></span><span class="field-hint-inactive" id="tfa_1615-H"><span id="tfa_1615-HH" class="hint">Please select yes to the question this applies to you or your spouse or partner. The Special Immigrant Visa program is for <b><u>Afghans and Iraqis only</u></b> who have worked on behalf of the U.S. government. If you would like more information about this program, <a href="iraplegalinfo.org/hc/en-us/articles/360057038291" target="_blank" style="background-color: rgb(255, 255, 255);">you can review our article about it</a>.</span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_1618-D">
+<label id="tfa_1618-L" class="label preField " for="tfa_1618">What is the status of your application?</label><br><div class="inputWrapper">
+<select id="tfa_1618" name="tfa_1618" data-condition="`#tfa_1616`" title="What is the status of your application?" aria-describedby="tfa_1618-HH" class=""><option value="">Please select...</option>
+<option value="tfa_1689" id="tfa_1689" data-conditionals="#tfa_2980" class="">I am waiting for COM approval</option>
+<option value="tfa_1690" id="tfa_1690" class="">I need to submit my I-360</option>
+<option value="tfa_1691" id="tfa_1691" class="">I need to submit my DS-260</option>
+<option value="tfa_1692" id="tfa_1692" class="">I am waiting for my embassy interview</option>
+<option value="tfa_1693" id="tfa_1693" class="">I finished my embassy interview and am waiting for my final result</option>
+<option value="tfa_1694" id="tfa_1694" class="">My application was approved</option>
+<option value="tfa_1695" id="tfa_1695" data-conditionals="#tfa_2980" class="">I received a notice such as a COM denial or revocation, request for evidence, notice of intent to deny, or visa refusal</option></select><span class="field-hint-inactive" id="tfa_1618-H"><span id="tfa_1618-HH" class="hint">If you have multiple applications, please select the status that you think best describes overall where you are in the SIV process.</span></span>
+</div>
+</div>
+</div>
+<div id="tfa_1633" class="section group">
+<div class="oneField field-container-D    " id="tfa_1634-D" role="radiogroup" aria-labelledby="tfa_1634-L" data-tfa-labelledby="-L tfa_1634-L">
+<label id="tfa_1634-L" class="label preField " data-tfa-check-label-for="tfa_1634"><span id="docs-internal-guid-67f878e7-7fff-8be5-3890-05556fd2c1a0"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Do you have serious concerns about your safety or the safety of a family member?</span></p></span></label><br><div class="inputWrapper"><span id="tfa_1634" class="choices horizontal "><span class="oneChoice"><input type="radio" value="tfa_1635" class="" id="tfa_1635" name="tfa_1634" data-conditionals="#tfa_1637" aria-labelledby="tfa_1635-L" data-tfa-labelledby="tfa_1634-L tfa_1635-L" data-tfa-parent-id="tfa_1634"><label class="label postField" id="tfa_1635-L" for="tfa_1635"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1636" class="" id="tfa_1636" name="tfa_1634" aria-labelledby="tfa_1636-L" data-tfa-labelledby="tfa_1634-L tfa_1636-L" data-tfa-parent-id="tfa_1634"><label class="label postField" id="tfa_1636-L" for="tfa_1636"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_1637-D" role="group" aria-labelledby="tfa_1637-L" data-tfa-labelledby="-L tfa_1637-L">
+<label id="tfa_1637-L" class="label preField " data-tfa-check-label-for="tfa_1637"><span id="docs-internal-guid-d9db0466-7fff-7e47-b80d-0370e9920e08"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">For the statements below, you can respond on behalf of yourself or a member of your family. Please select all that apply:</span></p></span></label><br><div class="inputWrapper"><span id="tfa_1637" class="choices vertical " data-condition="`#tfa_1635`"><span class="oneChoice"><input type="checkbox" value="tfa_1638" class="" id="tfa_1638" name="tfa_1638" aria-labelledby="tfa_1638-L" data-tfa-labelledby="tfa_1637-L tfa_1638-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1638-L" for="tfa_1638"><span class="input-checkbox-faux"></span>I feel unsafe because I am a refugee</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1639" class="" id="tfa_1639" name="tfa_1639" aria-labelledby="tfa_1639-L" data-tfa-labelledby="tfa_1637-L tfa_1639-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1639-L" for="tfa_1639"><span class="input-checkbox-faux"></span>I feel unsafe at home with my spouse</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1640" class="" id="tfa_1640" name="tfa_1640" data-conditionals="#tfa_2982" aria-labelledby="tfa_1640-L" data-tfa-labelledby="tfa_1637-L tfa_1640-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1640-L" for="tfa_1640"><span class="input-checkbox-faux"></span>I feel unsafe because of my sexual orientation or gender identity</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1641" class="" id="tfa_1641" name="tfa_1641" data-conditionals="#tfa_2982" aria-labelledby="tfa_1641-L" data-tfa-labelledby="tfa_1637-L tfa_1641-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1641-L" for="tfa_1641"><span class="input-checkbox-faux"></span>I feel unsafe because I am a child separated from my parents</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1642" class="" id="tfa_1642" name="tfa_1642" aria-labelledby="tfa_1642-L" data-tfa-labelledby="tfa_1637-L tfa_1642-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1642-L" for="tfa_1642"><span class="input-checkbox-faux"></span>I feel unsafe for another reason</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1643" class="" id="tfa_1643" name="tfa_1643" aria-labelledby="tfa_1643-L" data-tfa-labelledby="tfa_1637-L tfa_1643-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1643-L" for="tfa_1643"><span class="input-checkbox-faux"></span>I have been followed or harassed</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1644" class="" id="tfa_1644" name="tfa_1644" data-conditionals="#tfa_2982" aria-labelledby="tfa_1644-L" data-tfa-labelledby="tfa_1637-L tfa_1644-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1644-L" for="tfa_1644"><span class="input-checkbox-faux"></span>I have received multiple threats from the same person or group</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1645" class="" id="tfa_1645" name="tfa_1645" data-conditionals="#tfa_2982" aria-labelledby="tfa_1645-L" data-tfa-labelledby="tfa_1637-L tfa_1645-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1645-L" for="tfa_1645"><span class="input-checkbox-faux"></span>I have been harmed multiple times by the same person or group</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1646" class="" id="tfa_1646" name="tfa_1646" aria-labelledby="tfa_1646-L" data-tfa-labelledby="tfa_1637-L tfa_1646-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1646-L" for="tfa_1646"><span class="input-checkbox-faux"></span>I have tried to change my phone number to avoid threats</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1647" class="" id="tfa_1647" name="tfa_1647" aria-labelledby="tfa_1647-L" data-tfa-labelledby="tfa_1637-L tfa_1647-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1647-L" for="tfa_1647"><span class="input-checkbox-faux"></span>I have moved to avoid threats</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1648" class="" id="tfa_1648" name="tfa_1648" aria-labelledby="tfa_1648-L" data-tfa-labelledby="tfa_1637-L tfa_1648-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1648-L" for="tfa_1648"><span class="input-checkbox-faux"></span>I have been a victim of a crime</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1649" class="" id="tfa_1649" name="tfa_1649" aria-labelledby="tfa_1649-L" data-tfa-labelledby="tfa_1637-L tfa_1649-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1649-L" for="tfa_1649"><span class="input-checkbox-faux"></span>My children are not in school</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1650" class="" id="tfa_1650" name="tfa_1650" data-conditionals="#tfa_2982" aria-labelledby="tfa_1650-L" data-tfa-labelledby="tfa_1637-L tfa_1650-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1650-L" for="tfa_1650"><span class="input-checkbox-faux"></span>I am worried about my children because they are alone</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1651" class="" id="tfa_1651" name="tfa_1651" data-conditionals="#tfa_2982" aria-labelledby="tfa_1651-L" data-tfa-labelledby="tfa_1637-L tfa_1651-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1651-L" for="tfa_1651"><span class="input-checkbox-faux"></span>I have received a deportation order</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1652" class="" id="tfa_1652" name="tfa_1652" data-conditionals="#tfa_2982" aria-labelledby="tfa_1652-L" data-tfa-labelledby="tfa_1637-L tfa_1652-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1652-L" for="tfa_1652"><span class="input-checkbox-faux"></span>I have been detained or arrested in the country I am in currently</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1653" class="" id="tfa_1653" name="tfa_1653" data-conditionals="#tfa_2982" aria-labelledby="tfa_1653-L" data-tfa-labelledby="tfa_1637-L tfa_1653-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1653-L" for="tfa_1653"><span class="input-checkbox-faux"></span>I have been subjected to torture in the country I am in currently</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1654" class="" id="tfa_1654" name="tfa_1654" aria-labelledby="tfa_1654-L" data-tfa-labelledby="tfa_1637-L tfa_1654-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1654-L" for="tfa_1654"><span class="input-checkbox-faux"></span>I have trouble securing housing</label></span><span class="oneChoice"><input type="checkbox" value="tfa_1655" class="" id="tfa_1655" name="tfa_1655" aria-labelledby="tfa_1655-L" data-tfa-labelledby="tfa_1637-L tfa_1655-L" data-tfa-parent-id="tfa_1637"><label class="label postField" id="tfa_1655-L" for="tfa_1655"><span class="input-checkbox-faux"></span>I have trouble securing food</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_1656-D" role="radiogroup" aria-labelledby="tfa_1656-L" data-tfa-labelledby="-L tfa_1656-L">
+<label id="tfa_1656-L" class="label preField " data-tfa-check-label-for="tfa_1656"><span id="docs-internal-guid-0ccfcc00-7fff-c87d-4faa-5db186f27f3a"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Do you or a family member suffer from a serious medical condition or illness? The medical condition can be physical or psychological.</span></span></label><br><div class="inputWrapper"><span id="tfa_1656" class="choices horizontal "><span class="oneChoice"><input type="radio" value="tfa_1657" class="" id="tfa_1657" name="tfa_1656" data-conditionals="#tfa_1664" aria-labelledby="tfa_1657-L" data-tfa-labelledby="tfa_1656-L tfa_1657-L" data-tfa-parent-id="tfa_1656"><label class="label postField" id="tfa_1657-L" for="tfa_1657"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1658" class="" id="tfa_1658" name="tfa_1656" aria-labelledby="tfa_1658-L" data-tfa-labelledby="tfa_1656-L tfa_1658-L" data-tfa-parent-id="tfa_1656"><label class="label postField" id="tfa_1658-L" for="tfa_1658"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+<div class="oneField field-container-D    " id="tfa_1664-D" role="radiogroup" aria-labelledby="tfa_1664-L" data-tfa-labelledby="-L tfa_1664-L">
+<label id="tfa_1664-L" class="label preField " data-tfa-check-label-for="tfa_1664"><span id="docs-internal-guid-be37355d-7fff-48ce-db5e-c66847a19877"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Could the medical condition result in death or loss of an important bodily function?</span></span></label><br><div class="inputWrapper"><span id="tfa_1664" class="choices horizontal " data-condition="`#tfa_1657`"><span class="oneChoice"><input type="radio" value="tfa_1665" class="" id="tfa_1665" name="tfa_1664" data-conditionals="#tfa_2982" aria-labelledby="tfa_1665-L" data-tfa-labelledby="tfa_1664-L tfa_1665-L" data-tfa-parent-id="tfa_1664"><label class="label postField" id="tfa_1665-L" for="tfa_1665"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1666" class="" id="tfa_1666" name="tfa_1664" aria-labelledby="tfa_1666-L" data-tfa-labelledby="tfa_1664-L tfa_1666-L" data-tfa-parent-id="tfa_1664"><label class="label postField" id="tfa_1666-L" for="tfa_1666"><span class="input-radio-faux"></span>No</label></span></span></div>
+</div>
+</div>
+<div id="tfa_1671" class="section group">
+<div class="oneField field-container-D    " id="tfa_1672-D" role="radiogroup" aria-labelledby="tfa_1672-L" data-tfa-labelledby="-L tfa_1672-L">
+<label id="tfa_1672-L" class="label preField " data-tfa-check-label-for="tfa_1672"><span id="docs-internal-guid-f0e52f33-7fff-f1e2-e97e-3a5ffa1226b6"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Do you have family members in a safe third country that you would like to settle in? </span></p></span></label><br><div class="inputWrapper">
+<span id="tfa_1672" class="choices horizontal "><span class="oneChoice"><input type="radio" value="tfa_1673" class="" id="tfa_1673" name="tfa_1672" data-conditionals="#tfa_1678" aria-labelledby="tfa_1673-L" data-tfa-labelledby="tfa_1672-L tfa_1673-L" data-tfa-parent-id="tfa_1672" aria-describedby="tfa_1672-HH"><label class="label postField" id="tfa_1673-L" for="tfa_1673"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_1674" class="" id="tfa_1674" name="tfa_1672" aria-labelledby="tfa_1674-L" data-tfa-labelledby="tfa_1672-L tfa_1674-L" data-tfa-parent-id="tfa_1672" aria-describedby="tfa_1672-HH"><label class="label postField" id="tfa_1674-L" for="tfa_1674"><span class="input-radio-faux"></span>No</label></span></span><span class="field-hint-inactive" id="tfa_1672-H"><span id="tfa_1672-HH" class="hint">Please only select yes to this question if you have a spouse/partner, child, parent, sibling, grandparent, or grandchild abroad.</span></span>
+</div>
+</div>
+<div class="oneField field-container-D repeat   " id="tfa_1678-D" data-repeatlabel="Add another country" role="group" aria-labelledby="tfa_1678-L" data-tfa-labelledby="-L tfa_1678-L">
+<label id="tfa_1678-L" class="label preField " data-tfa-check-label-for="tfa_1678"><span id="docs-internal-guid-770c0ec9-7fff-18b9-8cce-e9359aa5f968"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Where are your relatives located?</span></p></span></label><br><div class="inputWrapper"><table id="tfa_1678" class="choices columns2 " data-condition="`#tfa_1673`">
+<tr>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_2963" class="" id="tfa_2963" name="tfa_2963" aria-labelledby="tfa_2963-L" data-tfa-labelledby="tfa_1678-L tfa_2963-L" data-tfa-parent-id="tfa_1678"><label class="label postField" id="tfa_2963-L" for="tfa_2963"><span class="input-checkbox-faux"></span>Canada</label></span></td>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_2964" class="" id="tfa_2964" name="tfa_2964" data-conditionals="#tfa_2984" aria-labelledby="tfa_2964-L" data-tfa-labelledby="tfa_1678-L tfa_2964-L" data-tfa-parent-id="tfa_1678"><label class="label postField" id="tfa_2964-L" for="tfa_2964"><span class="input-checkbox-faux"></span>France</label></span></td>
+</tr>
+<tr>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_2965" class="" id="tfa_2965" name="tfa_2965" data-conditionals="#tfa_2984" aria-labelledby="tfa_2965-L" data-tfa-labelledby="tfa_1678-L tfa_2965-L" data-tfa-parent-id="tfa_1678"><label class="label postField" id="tfa_2965-L" for="tfa_2965"><span class="input-checkbox-faux"></span>Germany</label></span></td>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_2966" class="" id="tfa_2966" name="tfa_2966" data-conditionals="#tfa_2984" aria-labelledby="tfa_2966-L" data-tfa-labelledby="tfa_1678-L tfa_2966-L" data-tfa-parent-id="tfa_1678"><label class="label postField" id="tfa_2966-L" for="tfa_2966"><span class="input-checkbox-faux"></span>Netherlands</label></span></td>
+</tr>
+<tr>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_2967" class="" id="tfa_2967" name="tfa_2967" data-conditionals="#tfa_2984" aria-labelledby="tfa_2967-L" data-tfa-labelledby="tfa_1678-L tfa_2967-L" data-tfa-parent-id="tfa_1678"><label class="label postField" id="tfa_2967-L" for="tfa_2967"><span class="input-checkbox-faux"></span>Norway</label></span></td>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_2968" class="" id="tfa_2968" name="tfa_2968" data-conditionals="#tfa_2984" aria-labelledby="tfa_2968-L" data-tfa-labelledby="tfa_1678-L tfa_2968-L" data-tfa-parent-id="tfa_1678"><label class="label postField" id="tfa_2968-L" for="tfa_2968"><span class="input-checkbox-faux"></span>Sweden</label></span></td>
+</tr>
+<tr>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_2969" class="" id="tfa_2969" name="tfa_2969" data-conditionals="#tfa_2984" aria-labelledby="tfa_2969-L" data-tfa-labelledby="tfa_1678-L tfa_2969-L" data-tfa-parent-id="tfa_1678"><label class="label postField" id="tfa_2969-L" for="tfa_2969"><span class="input-checkbox-faux"></span>United Kingdom</label></span></td>
+<td><span class="oneChoice"><input type="checkbox" value="tfa_2970" class="" id="tfa_2970" name="tfa_2970" data-conditionals="#tfa_2984" aria-labelledby="tfa_2970-L" data-tfa-labelledby="tfa_1678-L tfa_2970-L" data-tfa-parent-id="tfa_1678"><label class="label postField" id="tfa_2970-L" for="tfa_2970"><span class="input-checkbox-faux"></span>United States</label></span></td>
+</tr>
+<tr><td><span class="oneChoice"><input type="checkbox" value="tfa_2971" class="" id="tfa_2971" name="tfa_2971" aria-labelledby="tfa_2971-L" data-tfa-labelledby="tfa_1678-L tfa_2971-L" data-tfa-parent-id="tfa_1678"><label class="label postField" id="tfa_2971-L" for="tfa_2971"><span class="input-checkbox-faux"></span>Other</label></span></td></tr>
+</table></div>
+</div>
+</div>
+</div>
+<div id="tfa_3048" class="section group" data-condition="NOT (`#tfa_1201`) AND NOT (`#tfa_1173`)">
+<div class="oneField field-container-D    " id="tfa_3058-D" role="radiogroup" aria-labelledby="tfa_3058-L" data-tfa-labelledby="-L tfa_3058-L">
+<label id="tfa_3058-L" class="label preField " data-tfa-check-label-for="tfa_3058"><span id="docs-internal-guid-66dddaa0-7fff-cd0b-42b3-fb0dfa9f58ce"><p style="line-height:1.2;margin-top:0pt;margin-bottom:0pt;" dir="ltr"><span style="font-size: 10pt; font-family: &quot;Open Sans&quot;, sans-serif; color: rgb(0, 0, 0); background-color: transparent; font-variant-numeric: normal; font-variant-east-asian: normal; vertical-align: baseline; white-space: pre-wrap;">Have you or someone from your immediate family applied for a U.S. Special Immigrant Visa (SIV)?&nbsp;</span></p></span></label><br><div class="inputWrapper">
+<span id="tfa_3058" class="choices horizontal " data-condition="`#tfa_1061` OR `#tfa_1165` OR `#tfa_1311` OR `#tfa_1415`"><span class="oneChoice"><input type="radio" value="tfa_3059" class="" id="tfa_3059" name="tfa_3058" data-conditionals="#tfa_3061" aria-labelledby="tfa_3059-L" data-tfa-labelledby="tfa_3058-L tfa_3059-L" data-tfa-parent-id="tfa_3058" aria-describedby="tfa_3058-HH"><label class="label postField" id="tfa_3059-L" for="tfa_3059"><span class="input-radio-faux"></span>Yes</label></span><span class="oneChoice"><input type="radio" value="tfa_3060" class="" id="tfa_3060" name="tfa_3058" aria-labelledby="tfa_3060-L" data-tfa-labelledby="tfa_3058-L tfa_3060-L" data-tfa-parent-id="tfa_3058" aria-describedby="tfa_3058-HH"><label class="label postField" id="tfa_3060-L" for="tfa_3060"><span class="input-radio-faux"></span>No</label></span></span><span class="field-hint-inactive" id="tfa_3058-H"><span id="tfa_3058-HH" class="hint">Please select yes to the question this applies to you or your spouse or partner. The Special Immigrant Visa program is for <b><u>Afghans and Iraqis only</u></b> who have worked on behalf of the U.S. government. If you would like more information about this program, <a href="iraplegalinfo.org/hc/en-us/articles/360057038291" target="_blank" style="background-color: rgb(255, 255, 255);">you can review our article about it</a>.</span></span>
+</div>
+</div>
+<div class="oneField field-container-D    " id="tfa_3061-D">
+<label id="tfa_3061-L" class="label preField " for="tfa_3061">What is the status of your application?</label><br><div class="inputWrapper">
+<select id="tfa_3061" name="tfa_3061" data-condition="`#tfa_3059`" title="What is the status of your application?" aria-describedby="tfa_3061-HH" class=""><option value="">Please select...</option>
+<option value="tfa_3062" id="tfa_3062" data-conditionals="#tfa_2980" class="">I am waiting for COM approval</option>
+<option value="tfa_3063" id="tfa_3063" class="">I need to submit my I-360</option>
+<option value="tfa_3064" id="tfa_3064" class="">I need to submit my DS-260</option>
+<option value="tfa_3065" id="tfa_3065" class="">I am waiting for my embassy interview</option>
+<option value="tfa_3066" id="tfa_3066" class="">I finished my embassy interview and am waiting for my final result</option>
+<option value="tfa_3067" id="tfa_3067" class="">My application was approved</option>
+<option value="tfa_3068" id="tfa_3068" data-conditionals="#tfa_2980" class="">I received a notice such as a COM denial or revocation, request for evidence, notice of intent to deny, or visa refusal</option></select><span class="field-hint-inactive" id="tfa_3061-H"><span id="tfa_3061-HH" class="hint">If you have multiple applications, please select the status that you think best describes overall where you are in the SIV process.</span></span>
+</div>
+</div>
+</div>
+</fieldset>
+<div id="tfa_2973" class="section column group"><table class="columnLayout">
+<tr>
+<td><input type="hidden" id="tfa_2974" name="tfa_2974" value="Yes" data-condition="`#tfa_1567` OR `#tfa_1570`" class=""></td>
+<td><input type="hidden" id="tfa_2976" name="tfa_2976" value="Yes" data-condition="`#tfa_1578` OR (`#tfa_1599` AND NOT (`#tfa_1594`) AND `#tfa_1587`) OR `#tfa_1582`" class=""></td>
+</tr>
+<tr>
+<td><input type="hidden" id="tfa_2978" name="tfa_2978" value="Yes" data-condition="`#tfa_1574` OR `#tfa_1613`" class=""></td>
+<td><input type="hidden" id="tfa_2980" name="tfa_2980" value="Yes" data-condition="`#tfa_1689` OR `#tfa_1695` OR `#tfa_3062` OR `#tfa_3068`" class=""></td>
+</tr>
+<tr>
+<td><input type="hidden" id="tfa_2982" name="tfa_2982" value="Yes" data-condition="`#tfa_1644` OR `#tfa_1645` OR (`#tfa_1651` AND NOT (`#tfa_1529`)) OR `#tfa_1652` OR `#tfa_1653` OR `#tfa_1641` OR `#tfa_1650` OR `#tfa_1640` OR `#tfa_1665`" class=""></td>
+<td><input type="hidden" id="tfa_2984" name="tfa_2984" value="Yes" data-condition="(`#tfa_3016` OR `#tfa_2970`) OR (`#tfa_3015` OR `#tfa_2969`) OR (`#tfa_3011` OR `#tfa_2965`) OR (`#tfa_3010` OR `#tfa_2964`) OR (`#tfa_3012` OR `#tfa_2966`) OR (`#tfa_3014` OR `#tfa_2968`) OR (`#tfa_3013` OR `#tfa_2967`)" class=""></td>
+</tr>
+<tr><td><input type="hidden" id="tfa_3070" name="tfa_3070" value="Yes" data-condition="`#tfa_2986`" class=""></td></tr>
+</table></div>
+</div></div>
+<div class="actions" id="8-A" data-contentid="submit_button"><input type="submit" data-label="Submit" class="primaryAction" id="submit_button" value="Submit"></div>
+<div style="clear:both"></div>
+<input type="hidden" value="8" name="tfa_dbFormId" id="tfa_dbFormId"><input type="hidden" value="" name="tfa_dbResponseId" id="tfa_dbResponseId"><input type="hidden" value="56c2899e8979f36c843f07afce50161c" name="tfa_dbControl" id="tfa_dbControl"><input type="hidden" value="" name="tfa_dbWorkflowSessionUuid" id="tfa_dbWorkflowSessionUuid"><input type="hidden" value="" name="tfa_noOverWriteFields" id="tfa_noOverWriteFields"><input type="hidden" value="94" name="tfa_dbVersionId" id="tfa_dbVersionId"><input type="hidden" value="" name="tfa_switchedoff" id="tfa_switchedoff">
+</form>
+</div></div><div class="wFormFooter"><p class="supportInfo"><a target="new" class="contactInfoLink" href="https://refugeerights.tfaforms.net/forms/help/8" data-testid="contact-info-link">Contact Information</a><br></p></div>
+  <p class="supportInfo" >
+      </p>
+ </div>
+
+<script
+    id="open-telemetry-script"
+    type="text/javascript"
+    src="https://refugeerights.tfaforms.net/dist/open-telemetry/open-telemetry.3e6c1bedaa7fb4452dd0.js"
+    data-customer-id="126893"
+    data-exporter-url="https://us-east-1-otel.formassembly.com/v1/traces"
+    data-exporter-console="0"
+></script>
+    </div>
+
+        <script src='https://refugeerights.tfaforms.net/js/iframe_message_helper_internal.js?v=2'></script>
+
+</body>
+</html>
