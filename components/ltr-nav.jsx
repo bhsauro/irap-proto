@@ -6,16 +6,13 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import React, { createContext, useState, useEffect} from 'react';
 
 // TODO: Update navigation to account for next.js routing
-// TODO: Use useEffect to render menu items 
+// TODO: Use useEffect to render menu items once on load
 // TODO: Right to left navigation bar has some formatting issues (menu items are flipped), if I flip them there seems to
 // a mismatch between the client and server renderings
-
-const user = {
-  name: 'Tom Cook',
-  email: 'tom@example.com',
-  imageUrl:
-    'https://cdn.vectorstock.com/i/500p/84/91/world-earth-globe-icon-language-change-travel-vector-23828491.jpg',
-}
+// TODO: Fix menu on mobile formatting
+// TODO: Language selection does not work on condensed menu
+// TODO: RTL language alignment on condensed menu should be on right side
+// TODO: Remove user profile in RTL 
 
 // Update navigation to account for next.js routing
 const navigation = [
@@ -73,7 +70,7 @@ export default function Nav() {
                         >
                             <span className="absolute -inset-1.5" />
                             <span className="sr-only">Open user menu</span>
-                            <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
+                            <img className="h-8 w-8 rounded-full" src='https://cdn.vectorstock.com/i/500p/84/91/world-earth-globe-icon-language-change-travel-vector-23828491.jpg' alt="" />
                         </Menu.Button>
                         </div>
                         <Transition
@@ -139,31 +136,13 @@ export default function Nav() {
                         {item.name}
                     </Disclosure.Button>
                     ))}
+                    <Disclosure.Button className="relative flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
+                        <span className="absolute -inset-1.5" />
+                        <span className="sr-only">Open user menu</span>
+                        <img className="h-8 w-8 rounded-full" src='https://cdn.vectorstock.com/i/500p/84/91/world-earth-globe-icon-language-change-travel-vector-23828491.jpg' alt="" />
+                    </Disclosure.Button>
                 </div>
-                <div className="border-t border-gray-200 pb-3 pt-4">
-                    <div className="flex items-center px-4">
-                    <div className="flex-shrink-0">
-                        <img className="h-10 w-10 rounded-full" src="{user.imageUrl}" alt="" />
-                    </div>
-                    <div className="ml-3">
-                        <div className="text-base font-medium text-gray-800">{user.name}</div>
-                        <div className="text-sm font-medium text-gray-500">{user.email}</div>
-                    </div>
-                
-                    </div>
-                    <div className="mt-3 space-y-1">
-                    {languageSelection.map((item) => (
-                        <Disclosure.Button
-                        key={item.name}
-                        as="a"
-                        href={item.href}
-                        className="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800"
-                        >
-                        {item.name}
-                        </Disclosure.Button>
-                    ))}
-                    </div>
-                </div>
+
                 </Disclosure.Panel>
             </>
             )}
