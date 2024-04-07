@@ -4,25 +4,30 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import React, { createContext, useState, useEffect} from 'react';
+import Link from 'next/link'
 
-// TODO: Update navigation to account for next.js routing
-// TODO: Use useEffect to render menu items once on load
-// TODO: Right to left navigation bar has some formatting issues (menu items are flipped), if I flip them there seems to
-// a mismatch between the client and server renderings
-// TODO: Fix menu on mobile formatting
-// TODO: Language selection does not work on condensed menu
-// TODO: RTL language alignment on condensed menu should be on right side
-// TODO: Remove user profile in RTL 
+/*
+TODO: Update navigation to account for next.js routing
+TODO: Use useEffect to render menu items once on load
+TODO: Right to left navigation bar has some formatting issues (menu items are flipped), if I flip them there seems to
+a mismatch between the client and server renderings
+TODO: Fix menu on mobile formatting
+TODO: Language selection does not work on condensed menu
+TODO: RTL language alignment on condensed menu should be on right side
+TODO: Remove user profile in RTL 
+TODO: Update language selection redirect to go to same page with new language
+*/
 
-// Update navigation to account for next.js routing
+/* Navigation hrefs include language due to level of nav routing (if resources href == resources, page would route to 
+ocalhost:3000/resources not localhost:3000/en/resources), language routing includes ../ to reset route */
 const navigation = [
-  { name: 'Home', href: '#', current: true },
-  { name: 'Resources', href: '#', current: false },
-  { name: 'ُCheck your eligibility', href: '#', current: false },
+  { name: 'Home', href: '/en', current: true },
+  { name: 'Resources', href: '/en/resources', current: false },
+  { name: 'ُCheck your eligibility', href: '/en/eligibility', current: false },
 ]
 const languageSelection = [
-  { name: 'العربية', href: 'ar' },
-  { name: 'ُEnglish', href: '#' },
+  { name: 'العربية', href: '../ar' },
+  { name: 'ُEnglish', href: '' },
 ]
 
 function classNames(...classes) {
@@ -42,7 +47,7 @@ export default function Nav() {
                     <div className="flex">
                     <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
                         {navigation.map((item) => (
-                        <a
+                        <Link
                             key={item.name}
                             href={item.href}
                             className={classNames(
@@ -54,7 +59,7 @@ export default function Nav() {
                             aria-current={item.current ? 'page' : undefined}
                         >
                             {item.name}
-                        </a>
+                        </Link>
                         ))}
                     </div>
                     </div>
@@ -69,7 +74,7 @@ export default function Nav() {
                         onClick={() => {setOpenLanguage(!openLanguage)}}
                         >
                             <span className="absolute -inset-1.5" />
-                            <span className="sr-only">Open user menu</span>
+                            <span className="sr-only">Open language menu</span>
                             <img className="h-8 w-8 rounded-full" src='https://cdn.vectorstock.com/i/500p/84/91/world-earth-globe-icon-language-change-travel-vector-23828491.jpg' alt="" />
                         </Menu.Button>
                         </div>
@@ -87,15 +92,16 @@ export default function Nav() {
                             {languageSelection.map((item) => (
                             <Menu.Item key={item.name}>
                                 {({ active }) => (
-                                <a
+                                <Link
                                     href={item.href}
                                     className={classNames(
                                     active ? 'bg-gray-100' : '',
                                     'block px-4 py-2 text-sm text-gray-700'
                                     )}
+                                    replace={true}
                                 >
                                     {item.name}
-                                </a>
+                                </Link>
                                 )}
                             </Menu.Item>
                             ))}

@@ -14,13 +14,13 @@ const user = {
 
 // Update navigation to account for next.js routing
 const navigation = [
-  { name: 'الرئيسية', href: '#', current: true },
-  { name: 'الموارد', href: '#', current: false },
-  { name: 'التحقق من أهليتك', href: '#', current: false },
+  { name: 'الرئيسية', href: '/ar', current: true },
+  { name: 'موارد', href: '/ar/resources', current: false },
+  { name: 'تحقق من أهليتك', href: '/ar/eligibility', current: false },
 ]
 const languageSelection = [
   { name: 'العربية', href: '' },
-  { name: 'ُEnglish', href: 'en' },
+  { name: 'ُEnglish', href: '../en' },
 ]
 
 function classNames(...classes) {
