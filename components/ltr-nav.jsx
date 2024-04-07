@@ -5,23 +5,27 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import React, { createContext, useState, useEffect} from 'react';
 
+// TODO: Update navigation to account for next.js routing
+// TODO: Use useEffect to render menu items 
+// TODO: Right to left navigation bar has some formatting issues (menu items are flipped), if I flip them there seems to
+// a mismatch between the client and server renderings
+
 const user = {
   name: 'Tom Cook',
   email: 'tom@example.com',
   imageUrl:
     'https://cdn.vectorstock.com/i/500p/84/91/world-earth-globe-icon-language-change-travel-vector-23828491.jpg',
 }
+
+// Update navigation to account for next.js routing
 const navigation = [
-  { name: 'Home', href: '/', current: false },
-  { name: 'Resources', href: 'resources', current: false },
-  { name: 'ُCheck your eligibility', href: 'eligibility', current: false },
+  { name: 'Home', href: '#', current: true },
+  { name: 'Resources', href: '#', current: false },
+  { name: 'ُCheck your eligibility', href: '#', current: false },
 ]
 const languageSelection = [
-  { name: 'العربية', href: '#' },
+  { name: 'العربية', href: 'ar' },
   { name: 'ُEnglish', href: '#' },
-  { name: 'Espanol', href: '#' },
-  { name: 'فارسى', href: '#' },
-  { name: 'ትግርኛ', href: '#' }
 ]
 
 function classNames(...classes) {

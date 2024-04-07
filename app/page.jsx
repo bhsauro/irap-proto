@@ -1,8 +1,13 @@
 
+import { redirect } from 'next/navigation'
 import React from 'react';
 
 export default function Page({ navigation, user, userNavigation }) {
-  return (
-    <div>hi</div>
-  );
+  
+  //initiate default language to English but state should update with userlanguage 
+    return (
+      redirect(`/en`) 
+    );
+
+  
 }
