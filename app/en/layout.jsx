@@ -7,8 +7,7 @@ import Nav from "../../components/ltr-nav"
 export default function RootLayout({ children }) {
   
   return (
-    <html>
-    <body className="h-full">
+    <div className="h-full">
       <div className="min-h-full">
         <Nav />
         <div className="py-10">
@@ -17,6 +16,5 @@ export default function RootLayout({ children }) {
             </main>
           </div>
         </div>
-    </body>
-  </html>
+    </div>
   )}

@@ -1,23 +1,22 @@
+/* This component contains the navigation bar UI for left-to-right languages */ 
+
 'use client'
 
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import React, { createContext, useState, useEffect} from 'react';
-
-const user = {
-  name: 'Tom Cook',
-  email: 'tom@example.com',
-  imageUrl:
-    'https://cdn.vectorstock.com/i/500p/84/91/world-earth-globe-icon-language-change-travel-vector-23828491.jpg',
-}
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 // Update navigation to account for next.js routing
 const navigation = [
-  { name: 'الرئيسية', href: '/ar', current: true },
+  { name: 'الرئيسية', href: '/ar', current: false },
   { name: 'موارد', href: '/ar/resources', current: false },
   { name: 'تحقق من أهليتك', href: '/ar/eligibility', current: false },
 ]
+navigation.reverse(); // reverse navigation direction to make sure tabs generate in correct order
+
 const languageSelection = [
   { name: 'العربية', href: '' },
   { name: 'ُEnglish', href: '../en' },
@@ -28,8 +27,21 @@ function classNames(...classes) {
 }
 
 export default function Nav() {
+    const pathname = usePathname(); 
     const [openLanguage, setOpenLanguage] = useState(false);
+    const [navMenu, setNavMenu] = useState(navigation);
 
+    /* update 'current' properties of navigation items to indicate which tab is active */ 
+    useEffect(()=>{
+        const updatedNavMenu = navMenu.map(item => {
+            return {
+                ...item,
+                current: item.href === pathname
+            };
+        })
+        setNavMenu(updatedNavMenu);
+    }, [pathname])
+    
     return (
         <>   
         <Disclosure as="nav" className="border-b border-gray-200 bg-white">
@@ -37,11 +49,11 @@ export default function Nav() {
             <>
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-row-reverse h-16 justify-between">
-                    <div className="flex ">
-                    {/* To fix: menu components are rendering backwards for right-to-left languages */}
+                    <div className="flex">
+                    {/* Changing container to flex-row-reverse caused some layout issues, reversed menu items above instead */}
                     <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8 ">
-                        {navigation.map((item) => (
-                        <a
+                        {navMenu.map((item) => (
+                        <Link
                             key={item.name}
                             href={item.href}
                             className={classNames(
@@ -53,7 +65,7 @@ export default function Nav() {
                             aria-current={item.current ? 'page' : undefined}
                         >
                             {item.name}
-                        </a>
+                        </Link>
                         ))}
                     </div>
                     </div>
@@ -68,7 +80,7 @@ export default function Nav() {
                         >
                             <span className="absolute -inset-1.5" />
                             <span className="sr-only">Open user menu</span>
-                            <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
+                            <img className="h-8 w-8 rounded-full" src='https://cdn.vectorstock.com/i/500p/84/91/world-earth-globe-icon-language-change-travel-vector-23828491.jpg' alt="" />
                         </Menu.Button>
                         </div>
                         <Transition
@@ -81,11 +93,11 @@ export default function Nav() {
                         leaveFrom="transform opacity-100 scale-100"
                         leaveTo="transform opacity-0 scale-95"
                         >
-                        <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <Menu.Items className="absolute left-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                             {languageSelection.map((item) => (
                             <Menu.Item key={item.name}>
                                 {({ active }) => (
-                                <a
+                                <Link
                                     href={item.href}
                                     className={classNames(
                                     active ? 'bg-gray-100' : '',
@@ -93,7 +105,7 @@ export default function Nav() {
                                     )}
                                 >
                                     {item.name}
-                                </a>
+                                </Link>
                                 )}
                             </Menu.Item>
                             ))}
@@ -118,7 +130,7 @@ export default function Nav() {
 
                 <Disclosure.Panel className="sm:hidden">
                 <div className="space-y-1 pb-3 pt-2">
-                    {navigation.map((item) => (
+                    {navMenu.map((item) => (
                     <Disclosure.Button
                         key={item.name}
                         as="a"
@@ -136,7 +148,7 @@ export default function Nav() {
                     <Disclosure.Button className="relative flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2">
                         <span className="absolute -inset-1.5" />
                         <span className="sr-only">Open user menu</span>
-                        <img className="h-8 w-8 rounded-full" src={user.imageUrl} alt="" />
+                        <img className="h-8 w-8 rounded-full" src='https://cdn.vectorstock.com/i/500p/84/91/world-earth-globe-icon-language-change-travel-vector-23828491.jpg' alt="" />
                     </Disclosure.Button>
                 </div>
                 </Disclosure.Panel>

@@ -1,3 +1,13 @@
+/*
+This component contains the navigation bar UI for left-to-right languages
+
+TODO: Update language selection redirect to go to same page with new language
+TODO: Language selection does not work on condensed menu
+TODO: RTL alignment on condensed menu should be on right side
+TODO: consider creating a navigation dictionary object for different menus, that can then be imported and rendered in RTL or LTR nav bar
+No need to create multiples of the nav doc as languages expand, only need to templates for LTR and RTL languages
+*/
+
 'use client'
 
 import { Fragment } from 'react'
@@ -5,38 +15,42 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import React, { createContext, useState, useEffect} from 'react';
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
-/*
-TODO: Update navigation to account for next.js routing
-TODO: Use useEffect to render menu items once on load
-TODO: Right to left navigation bar has some formatting issues (menu items are flipped), if I flip them there seems to
-a mismatch between the client and server renderings
-TODO: Fix menu on mobile formatting
-TODO: Language selection does not work on condensed menu
-TODO: RTL language alignment on condensed menu should be on right side
-TODO: Remove user profile in RTL 
-TODO: Update language selection redirect to go to same page with new language
-*/
-
-/* Navigation hrefs include language due to level of nav routing (if resources href == resources, page would route to 
-ocalhost:3000/resources not localhost:3000/en/resources), language routing includes ../ to reset route */
-const navigation = [
-  { name: 'Home', href: '/en', current: true },
-  { name: 'Resources', href: '/en/resources', current: false },
-  { name: 'ُCheck your eligibility', href: '/en/eligibility', current: false },
-]
+/* consider moving languageSelection, state should be at application level, not nav level */
 const languageSelection = [
   { name: 'العربية', href: '../ar' },
   { name: 'ُEnglish', href: '' },
 ]
+
+/* Navigation hrefs include language due to level of nav routing (if resources href == resources, page would route to 
+ocalhost:3000/resources not localhost:3000/en/resources), language routing includes ../ to reset route */
+const navigation = [
+    { name: 'Home', href: '/en', current: false },
+    { name: 'Resources', href: '/en/resources', current: false },
+    { name: 'ُCheck your eligibility', href: '/en/eligibility', current: false },
+  ]
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
 export default function Nav() {
+    const pathname = usePathname(); 
     const [openLanguage, setOpenLanguage] = useState(false);
+    const [navMenu, setNavMenu] = useState(navigation);
 
+    //update 'current' properties of navigation items to indicate which tab is active
+    useEffect(()=>{
+        const updatedNavMenu = navMenu.map(item => {
+            return {
+                ...item,
+                current: item.href === pathname
+            };
+        })
+        setNavMenu(updatedNavMenu);
+    }, [pathname])
+   
     return (
         <>   
         <Disclosure as="nav" className="border-b border-gray-200 bg-white">
@@ -45,8 +59,8 @@ export default function Nav() {
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="flex h-16 justify-between">
                     <div className="flex">
-                    <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
-                        {navigation.map((item) => (
+                    <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8"> 
+                        {navMenu.map((item) => (
                         <Link
                             key={item.name}
                             href={item.href}
@@ -56,7 +70,7 @@ export default function Nav() {
                                 : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700',
                             'inline-flex items-center border-b-2 px-1 pt-1 text-sm font-medium'
                             )}
-                            aria-current={item.current ? 'page' : undefined}
+                            aria-current={item.current ? 'page' : undefined}         
                         >
                             {item.name}
                         </Link>
@@ -69,7 +83,6 @@ export default function Nav() {
                     {/* Profile dropdown */}
                     <Menu as="div" className="relative ml-3">
                         <div>
-                        {console.log("Menu.Button rendered")} {/* Debugging */}
                         <Menu.Button className="relative flex max-w-xs items-center rounded-full bg-white text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
                         onClick={() => {setOpenLanguage(!openLanguage)}}
                         >
@@ -126,7 +139,7 @@ export default function Nav() {
 
                 <Disclosure.Panel className="sm:hidden">
                 <div className="space-y-1 pb-3 pt-2">
-                    {navigation.map((item) => (
+                    {navMenu.map((item) => (
                     <Disclosure.Button
                         key={item.name}
                         as="a"
