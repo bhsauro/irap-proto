@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
         <Nav />
         <div className="py-10">
             <main>
-              <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 border border border-red-500">{children}</div>
+              <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 ">{children}</div>
             </main>
           </div>
         </div>
