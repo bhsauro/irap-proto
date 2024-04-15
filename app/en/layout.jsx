@@ -1,4 +1,4 @@
-// import { Inter } from "../../.next/font/google"
+// import { Inter } from "../../next/font/google"
 import "../globals.css";
 import Nav from "../../components/ltr-nav"
 
@@ -7,14 +7,8 @@ import Nav from "../../components/ltr-nav"
 export default function RootLayout({ children }) {
   
   return (
-    <div className="h-full">
-      <div className="min-h-full">
-        <Nav />
-        <div className="py-10">
-            <main>
-              <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 ">{children}</div>
-            </main>
-          </div>
-        </div>
-    </div>
+    <>
+    <Nav />
+    <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">{children}</div>
+    </>
   )}
