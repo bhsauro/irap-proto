@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from '../../../components/form-1'
+import Form from '../../../components/en-form'
 
 export default function Page({ navigation, user, userNavigation }) {
   return (
@@ -10,7 +10,9 @@ export default function Page({ navigation, user, userNavigation }) {
         </div>
       </header>
       <main>
-        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8 border border-red"></div>
+        <div className="mx-auto max-w-4xl sm:px-6 lg:px-8">
+          <Form/>
+        </div>
       </main>
     </>
   );

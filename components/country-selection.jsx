@@ -1,5 +1,3 @@
-'use client'
-
 import { Fragment, useState } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
@@ -21,7 +19,7 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Form() {
+export default function Example() {
   const [selected, setSelected] = useState(people[3])
 
   return (
