@@ -1,8 +1,6 @@
-import { Inter } from "next/font/google";
+import {open_sans} from "./fonts.js";
 import "./globals.css";
 import Nav from "../components/ltr-nav";
-
-// const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "IRAP Prototype",
@@ -13,9 +11,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html>
-    <body className="h-full">
-      {children}
-    </body>
+    <body className={`${open_sans.className} antialiased h-full`}>{children}</body>
     </html>
   )
 }
