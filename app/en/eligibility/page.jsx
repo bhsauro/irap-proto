@@ -6,7 +6,7 @@ export default function Page({ navigation, user, userNavigation }) {
     <>
       <header>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 my-4">
-          <h1 className="text-3xl font-bold leading-tight tracking-tight text-gray-900 text-center">Eligibility</h1>
+          <h1 className="font-bold leading-tight tracking-tight text-gray-900 text-center">Eligibility</h1>
         </div>
       </header>
       <main>

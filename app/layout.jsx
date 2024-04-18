@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html>
-    <body className={`${open_sans.className} antialiased h-full`}>{children}</body>
+      <body className={`${open_sans.className} antialiased h-full`}>{children}</body>
     </html>
   )
 }
