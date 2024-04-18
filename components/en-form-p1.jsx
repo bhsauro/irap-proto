@@ -5,12 +5,11 @@ export default function Page1() {
     return (
         <>
         <p className="text-base">
-            [Organization] is a legal organization that provides free services to refugees and displaced people. 
-            We decide to help people based on their need and eligibility for immigration status. We do not decide to help people based on any other social or political or religious criteria. 
-            [Organization] is not a part of IOM, ICMC, UNHCR, COMAR, or any government. We cannot help with finances, food, housing, education, or employment. 
-            <br></br><br></br>
-            Use this form to understand your legal needs and determine if we might be able to help. Please take your time to fill it out. It should take you about 10-20 minutes depending on your situation. You can save the form and come back to it if you need extra time to find an answer to a question. 
-            Please be aware that this does not guarantee that   [Organization] will be able to provide you with legal help. You can expect to receive a response from us between two to three weeks after you submit it.
+            
+        Introduction - purpose of tool | posuere sed nibh id, porttitor rhoncus orci. Etiam sed condimentum purus. Quisque at eros ac tellus imperdiet facilisis consequat condimentum magna. Nam euismod accumsan turpis eu pharetra. <br></br><br></br>
+        Aliquam at mi nec eros maximus porttitor. Praesent dapibus cursus sapien sed ornare. Nam vulputate purus at accumsan tristique. Fusce pulvinar condimentum eleifend. Curabitur in diam aliquam, imperdiet sapien non, pretium enim. Vivamus vitae ipsum bibendum, tincidunt magna et, lobortis tellus.
+        Nam id suscipit massa. Sed aliquam pharetra vulputate. Praesent vitae auctor purus, sit amet convallis quam. In quis ante a dui mattis commodo. Nunc egestas velit ullamcorper orci molestie, et laoreet sem dignissim. Ut dapibus pulvinar aliquam. Donec id erat felis. Proin sit amet egestas massa, non varius lacus. Aliquam elementum arcu dolor, et blandit turpis scelerisque quis. Nunc ultricies erat eu dignissim maximus. Nam ac hendrerit libero. In hac habitasse platea dictumst. Sed vel varius tellus. Phasellus sodales lacus quis magna commodo, sit amet laoreet eros tincidunt. Fusce quis ex at purus eleifend tempus. Etiam vestibulum sapien massa, et ornare purus tincidunt quis.
+
         </p>
       
         </>
