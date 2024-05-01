@@ -10,7 +10,7 @@ export default function Form() {
     return (
         <form className='mt-8 px-8 flex flex-col'>
             <Page1/>
-            <button className="mt-8 px-8 py-1 self-end border border-indigo-600">Continue</button>
+            <button className="mt-8 px-10 py-1 self-end border border-indigo-600">Continue</button>
         </form>
     )
 }
